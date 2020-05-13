@@ -1,5 +1,6 @@
 # NoriDev AdGuard DNS Filter
 이 필터는 모바일 기기에 최적화 되어있으며, AdGuard 전용 필터입니다.
+
 AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
 
 ### 광고 필터링
