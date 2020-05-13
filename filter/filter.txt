@@ -11,7 +11,6 @@
 ! ---------------
 ||ad-content.moment.kakao.com
 ||kyson.ad.daum.net
-||analytics.ad.daum.net
 ||display.ad.daum.net
 ||ads.mopub.com
 ||pagead2.googleadservices.com
@@ -30,6 +29,20 @@
 ||ad.everytime.kr
 ||securepubads.g.doubleclick.net
 ||ads-twitter.com^$third-party
+||ads-bidder-api.twitter.com^
+||ads-twitter.com^
+
+mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
+mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
+
+! -------------------------------
+! ----- Tracking Protection -----
+! -------------------------------
+||analytics.ad.daum.net
+||analytics.twitter.com^$third-party
+||analytics.twitter.com/i/adsct?
+||cdn.api.twitter.com/*/urls/count.json$third-party
+||twitter.com/i/jot
 
 ! -------------------------------
 ! ----- Site element hiding -----
