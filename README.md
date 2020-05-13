@@ -1,4 +1,7 @@
-# NoriDev AdGuard DNS Filter
+# NoriDev AdGuard DNS Filter - Beta
+**[ 경고 ]** Beta 테스트가 진행중인 필터입니다.
+Beta 필터는 stable 필터에 적용 예정인 필터링 구문과 내용을 담고 있으며, stable 버전 대비 불안정하거나 불필요한 영역까지 블락하는 경우가 발생할 수 있으므로 사용에 주의해 주십시오.
+
 이 필터는 모바일 기기에 최적화 되어있으며, AdGuard 전용 필터입니다.
 AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
 
@@ -25,7 +28,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 3. **DNS 필터**를 클릭합니다.
 4. **필터 추가**를 클릭합니다.
 5. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
-<pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
+<pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/beta/filter/filter.txt</pre>
 
 ## 테스트 진행 중
 - 트위터 앱에서 나타나는 프로모션 광고 제거
