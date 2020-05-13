@@ -24,10 +24,29 @@
 ||advimg.ad-mapps.com
 ||ad.everytime.kr
 ||securepubads.g.doubleclick.net
+||ads-twitter.com^$third-party
 
 ! Site element hiding
+##.twitter-ad
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
+twitter.com##a[href*="src=promoted_trend_click"]
+twitter.com##a[href*="src=promoted_trend_click"] + div
+twitter.com#%#!function(){(new MutationObserver(function(){document.querySelectorAll('div[class] > div[style^="position: relative"] > div[style*="position: absolute;"]:not([class]):not([style*="display: none"]').forEach(function(b){Object.keys(b).some(function(a){if(a.includes("reactEventHandlers")){a=b[a];try{var c=a.children._owner.memoizedProps.item.id;c.includes("promotedTweet")&&(b.style="display:none!important;")}catch(d){}}})})})).observe(document,{childList:!0,subtree:!0})}();
+twitter.com##.has-profile-promoted-tweet
+twitter.com##.is-promoted
+twitter.com##.promoted-account
+twitter.com##.promoted-trend
+twitter.com##.promoted-tweet[data-disclosure-type="issue"]
+twitter.com##.promoted-tweet[data-disclosure-type="political"]
+twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
+twitter.com##.stream-item-group-start[label="promoted"]
+twitter.com##.stream-item[data-item-type="tweet"][data-item-id*=":"]
+twitter.com##.stream-tweet[label="promoted"]
+twitter.com#?#div[data-testid="UserCell"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广/)
+twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|推薦|推荐/))
+twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|sponsorluğunda|Mainostettu|推廣|推广/)
+twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Tweet|推廣推文|推广推文/)
 
 ! Twitter Faster DNS (Twimg)
 ||104.76.97.12 pbs.twimg.com
