@@ -27,4 +27,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 5. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
 
+## 테스트 진행 중
+- 트위터 앱에서 나타나는 프로모션 광고 제거
+
 ## 추가 예정
