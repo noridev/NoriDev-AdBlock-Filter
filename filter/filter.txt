@@ -7,6 +7,21 @@
 ! Expires: 1 days
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
+! ------------------------------
+! ----- Twitter Faster DNS -----
+! ------------------------------
+104.76.97.12 pbs.twimg.com
+104.76.97.13 video.twimg.com
+
+! -------------------------------
+! ----- Tracking Protection -----
+! -------------------------------
+||analytics.ad.daum.net
+||analytics.twitter.com^$third-party
+||analytics.twitter.com/i/adsct?
+||cdn.api.twitter.com/*/urls/count.json$third-party
+||twitter.com/i/jot
+
 ! ---------------
 ! ----- ads -----
 ! ---------------
@@ -37,15 +52,6 @@ mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"]
 mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
 
 ! -------------------------------
-! ----- Tracking Protection -----
-! -------------------------------
-||analytics.ad.daum.net
-||analytics.twitter.com^$third-party
-||analytics.twitter.com/i/adsct?
-||cdn.api.twitter.com/*/urls/count.json$third-party
-||twitter.com/i/jot
-
-! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
 ##.twitter-ad
@@ -71,9 +77,3 @@ twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Twee
 mobile.twitter.com#?#.tweet:-abp-has(.promo)
 twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
-
-! ------------------------------
-! ----- Twitter Faster DNS -----
-! ------------------------------
-104.76.97.12 pbs.twimg.com
-104.76.97.13 video.twimg.com
