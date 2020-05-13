@@ -10,8 +10,38 @@
 ! ------------------------------
 ! ----- Twitter Faster DNS -----
 ! ------------------------------
-104.76.97.12 pbs.twimg.com
-104.76.97.13 video.twimg.com
+! -- pbs.twimg.com --
+# 104.76.97.12 pbs.twimg.com
+192.229.237.96 pbs.twimg.com
+184.31.10.237 pbs.twimg.com
+184.31.3.237 pbs.twimg.com
+151.101.52.159 pbs.twimg.com
+151.101.48.159 pbs.twimg.com
+72.21.91.70 pbs.twimg.com
+151.101.184.159 pbs.twimg.com
+192.229.173.16 pbs.twimg.com
+23.1.99.237 pbs.twimg.com
+151.101.120.159 pbs.twimg.com
+151.101.36.159 pbs.twimg.com
+
+! -- video.twimg.com --
+# 104.76.97.13 video.twimg.com
+117.18.232.102 video.twimg.com
+184.31.10.236 video.twimg.com
+23.1.106.236 video.twimg.com
+184.31.3.236 video.twimg.com
+151.101.52.158 video.twimg.com
+192.229.210.163 video.twimg.com
+151.101.40.158 video.twimg.com
+93.184.215.217 video.twimg.com
+151.101.248.158 video.twimg.com
+151.101.184.158 video.twimg.com
+151.101.200.158 video.twimg.com
+23.1.99.236 video.twimg.com
+151.101.120.158 video.twimg.com
+151.101.16.158 video.twimg.com
+151.101.36.158 video.twimg.com
+151.101.112.158 video.twimg.com
 
 ! -------------------------------
 ! ----- Tracking Protection -----
