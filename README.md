@@ -1,8 +1,9 @@
 # NoriDev AdGuard DNS Filter
 이 필터는 모바일 기기에 최적화 되어있으며, AdGuard 전용 필터입니다.
 
-AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
+AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
 
+## 기능
 ### 광고 필터링
 - 카카오톡 인앱 광고
 - 에브리타임 광고
@@ -28,7 +29,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 5. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
 
-## 테스트 진행 중
-- 트위터 앱에서 나타나는 프로모션 광고 제거
+## 작업 진행 중
 
 ## 추가 예정
+- 트위터 앱에서 나타나는 프로모션 광고 제거
