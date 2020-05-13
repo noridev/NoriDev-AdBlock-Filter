@@ -47,6 +47,8 @@
 ||ads-twitter.com^$third-party
 ||ads-bidder-api.twitter.com^
 ||ads-twitter.com^
+||ads-api.twitter.com^
+||ads-bidder-api.twitter.com^
 
 mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
 mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
