@@ -3,7 +3,7 @@
 ! Description: Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다. 카카오톡 인앱 광고, 에브리타임 광고, 구글 애드센스 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
 ! Version: 1.0.2
-! TimeUpdated: 2020-05-13T22:35:00+09:00
+! TimeUpdated: 2020-05-13T22:44:00+09:00
 ! Expires: 1 days
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -49,18 +49,15 @@
 ||ads-twitter.com^
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
-mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
-mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
 
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
 ##.twitter-ad
+twitter.com,wral.com##.promotion
+twitter.com##.suggested-tweet-stream-container
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
-twitter.com##a[href*="src=promoted_trend_click"]
-twitter.com##a[href*="src=promoted_trend_click"] + div
-twitter.com#%#!function(){(new MutationObserver(function(){document.querySelectorAll('div[class] > div[style^="position: relative"] > div[style*="position: absolute;"]:not([class]):not([style*="display: none"]').forEach(function(b){Object.keys(b).some(function(a){if(a.includes("reactEventHandlers")){a=b[a];try{var c=a.children._owner.memoizedProps.item.id;c.includes("promotedTweet")&&(b.style="display:none!important;")}catch(d){}}})})})).observe(document,{childList:!0,subtree:!0})}();
 twitter.com##.has-profile-promoted-tweet
 twitter.com##.is-promoted
 twitter.com##.promoted-account
@@ -71,10 +68,13 @@ twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
 twitter.com##.stream-item-group-start[label="promoted"]
 twitter.com##.stream-item[data-item-type="tweet"][data-item-id*=":"]
 twitter.com##.stream-tweet[label="promoted"]
+twitter.com##a[href*="src=promoted_trend_click"]
+twitter.com##a[href*="src=promoted_trend_click"] + div
+twitter.com#%#!function(){(new MutationObserver(function(){document.querySelectorAll('div[class] > div[style^="position: relative"] > div[style*="position: absolute;"]:not([class]):not([style*="display: none"]').forEach(function(b){Object.keys(b).some(function(a){if(a.includes("reactEventHandlers")){a=b[a];try{var c=a.children._owner.memoizedProps.item.id;c.includes("promotedTweet")&&(b.style="display:none!important;")}catch(d){}}})})})).observe(document,{childList:!0,subtree:!0})}();
 twitter.com#?#div[data-testid="UserCell"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
 twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|推薦|推荐|프로모션 중|プロモーション/))
 twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|sponsorluğunda|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
 twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Tweet|推廣推文|推广推文|프로모션 중|プロモーション/)
 mobile.twitter.com#?#.tweet:-abp-has(.promo)
-twitter.com,wral.com##.promotion
-twitter.com##.suggested-tweet-stream-container
+mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
+mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
