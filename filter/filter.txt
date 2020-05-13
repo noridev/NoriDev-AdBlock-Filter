@@ -73,7 +73,7 @@ twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
 
 ! --------------------------------------
-! ----- Twitter Faster DNS (Twimg) -----
+! ----- Twitter Faster DNS (twimg) -----
 ! --------------------------------------
 104.76.97.12 pbs.twimg.com
 104.76.97.13 video.twimg.com
