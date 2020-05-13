@@ -26,6 +26,6 @@ AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
 4. **필터 추가**를 클릭합니다.
 5. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
 
-https://raw.githubusercontent.com/NoriDev/Custom-AdGuard-DNS-Filter/master/filter/filter.txt
+https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt
 
 ## 추가 예정
