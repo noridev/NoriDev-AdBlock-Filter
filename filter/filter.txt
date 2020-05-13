@@ -6,7 +6,9 @@
 ! TimeUpdated: 2020-05-13T18:29:00+09:00
 ! Expires: 1 days
 
-! ads
+! ---------------
+! ----- ads -----
+! ---------------
 ||ad-content.moment.kakao.com
 ||kyson.ad.daum.net
 ||analytics.ad.daum.net
@@ -29,7 +31,9 @@
 ||securepubads.g.doubleclick.net
 ||ads-twitter.com^$third-party
 
-! Site element hiding
+! -------------------------------
+! ----- Site element hiding -----
+! -------------------------------
 ##.twitter-ad
 twitter.com##div.promoted-tweet
 twitter.com##li.has-profile-promoted-tweet
@@ -51,6 +55,8 @@ twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"
 twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|sponsorluğunda|Mainostettu|推廣|推广/)
 twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Tweet|推廣推文|推广推文/)
 
-! Twitter Faster DNS (Twimg)
+! --------------------------------------
+! ----- Twitter Faster DNS (Twimg) -----
+! --------------------------------------
 104.76.97.12 pbs.twimg.com
 104.76.97.13 video.twimg.com
