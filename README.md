@@ -1,6 +1,8 @@
 # NoriDev AdGuard DNS Filter
 이 필터는 모바일 기기에 최적화 되어있으며, AdGuard 전용 필터입니다.
 
+브라우저 필터와 겸용으로 사용가능합니다. (브라우저(Safari 호환) + DNS 필터)
+
 AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
 
 ## 기능
@@ -11,6 +13,7 @@ AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습
 - 옥션 광고
 - 구글 애드센스 광고
 - 웹 트위터의 프로모션 광고
+- 네이버 애드포스트, 모바일 블로그 배너 광고
 
 ### 추가 기능
 - 트위터의 이미지 및 동영상 로드 속도 개선
@@ -31,6 +34,6 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
 
 ## 작업 진행 중
+- 트위터 앱에서 나타나는 프로모션 광고 제거
 
 ## 추가 예정
-- 트위터 앱에서 나타나는 프로모션 광고 제거
