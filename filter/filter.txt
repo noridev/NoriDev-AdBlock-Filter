@@ -55,9 +55,10 @@
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
-m.blog.naver.com###.banner_POST_VIEW_BOTTOM_WEB_ > a.imageBanner
-m.blog.naver.com###ssp-adda > div
-m.blog.naver.com###ssp-adcontent > div
+m.blog.naver.com###.banner_POST_VIEW_BOTTOM_WEB
+m.blog.naver.com###ssp-adda
+m.blog.naver.com###ssp-adcontent
+m.blog.naver.com###ssp-adpost
 ##.twitter-ad
 twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
