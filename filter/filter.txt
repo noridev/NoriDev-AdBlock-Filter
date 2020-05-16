@@ -55,7 +55,7 @@
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
-m.blog.naver.com###.banner_POST_VIEW_BOTTOM_WEB
+m.blog.naver.com##.banner_POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
