@@ -49,10 +49,14 @@
 ||ads-twitter.com^
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
+||searchad-phinf.pstatic.net^
+||shopping-phinf.pstatic.net^
 
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
+m.blog.naver.com###banner_POST_VIEW_BOTTOM_WEB_100042 > a.imageBanner
+m.blog.naver.com###ssp-adda > div
 ##.twitter-ad
 twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
