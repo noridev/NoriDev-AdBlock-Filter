@@ -50,7 +50,6 @@
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
 ||searchad-phinf.pstatic.net^
-||shopping-phinf.pstatic.net^
 
 ! -------------------------------
 ! ----- Site element hiding -----
