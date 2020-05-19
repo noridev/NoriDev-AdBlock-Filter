@@ -21,16 +21,47 @@ AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습
 ## 사용 방법
 AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주세요.
 
-### 개발자 모드 활성화
-1. **일반**을 클릭합니다.
-2. **개발자 모드**의 스위치를 오른쪽으로 밀어 활성화 해 줍니다.
-
-### 필터 추가
-1. **DNS 보호**를 클릭합니다.
+### DNS 필터 추가
+#### Android
+1. **설정**에 진입합니다.
 2. **DNS 필터링**을 클릭합니다.
-3. **DNS 필터**를 클릭합니다.
-4. **필터 추가**를 클릭합니다.
-5. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
+3. **DNS 요청 차단 방식**을 클릭합니다.
+4. **새 DNS 필터**를 클릭합니다.
+5. **URL 또는 경로**에 아래 링크를 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdGuard DNS Filter**를 입력하고 **추가**를 누릅니다.
+<pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
+
+#### iOS
+##### 개발자 모드 활성화(iOS)
+1. **설정**에 진입합니다.
+2. **일반**을 클릭합니다.
+3. **개발자 모드**의 스위치를 오른쪽으로 밀어 활성화 해 줍니다.
+
+##### 필터 추가
+1. **설정**에 진입합니다.
+2. **DNS 보호**를 클릭합니다.
+3. **DNS 필터링**을 클릭합니다.
+4. **DNS 필터**를 클릭합니다.
+5. **필터 추가**를 클릭합니다.
+6. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
+<pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
+
+### 브라우저 필터 추가
+#### Android
+1. **설정**에 진입합니다.
+2. **콘텐츠 차단**을 클릭합니다.
+3. **필터**를 클릭합니다.
+4. **사용자 지정 필터**를 클릭합니다.
+5. **사용자 정의 필터 추가**를 클릭합니다.
+6. **URL 또는 경로**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **신뢰할 수 있는 필터**에 체크하고 **추가**를 누릅니다.
+<pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
+
+#### iOS
+1. **설정**에 진입합니다.
+2. **Safari 보호**를 클릭합니다.
+3. **필터**를 클릭합니다.
+4. **사용자 정의**를 클릭합니다.
+5. **필터 추가**를 클릭합니다.
+6. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/master/filter/filter.txt</pre>
 
 ## 작업 진행 중
