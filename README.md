@@ -35,7 +35,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/beta/filter/filter.txt</pre>
 
 #### iOS
-##### 개발자 모드 활성화(iOS)
+##### 개발자 모드 활성화
 1. **설정**에 진입합니다.
 2. **일반**을 클릭합니다.
 3. **개발자 모드**의 스위치를 오른쪽으로 밀어 활성화 해 줍니다.
