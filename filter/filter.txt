@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다. 카카오톡 인앱 광고, 에브리타임 광고, 구글 애드센스 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.0.4
-! TimeUpdated: 2020-05-30T23:57:00+09:00
+! Version: 1.0.5
+! TimeUpdated: 2020-05-31T18:32:00+09:00
 ! Expires: 1 days
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -56,6 +56,8 @@
 ||siape.veta.naver.com.nheos.com^
 ||tvetamovie.pstatic.net.dn.gscdn.net^
 ||tvetamovie.pstatic.net^
+||naverwebtoon-phinf.pstatic.net.static.gscdn.net^
+||naverwebtoon-phinf.pstatic.net^
 
 ! -------------------------------
 ! ----- Site element hiding -----
@@ -71,6 +73,34 @@ m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
+
+# Naver Mobile Web ads
+m.naver.com###_MM_WRAP_nmap_news_channel_1
+m.naver.com###nmap_news_feed_top
+m.naver.com###nmap_news_channel_top
+m.naver.com###_MM_WRAP_nmap_news_feed_1
+m.naver.com###_MM_WRAP_nmap_news_feed_2
+m.naver.com###_MM_WRAP_nmap_news_feed_3
+m.naver.com###HOME_AD > div.nmap_wrapper
+m.naver.com###WTH_WRAP > div.cw_cnow:first-child
+m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_napp_bannernew:nth-child(4)
+m.naver.com###nmap_sports_top
+m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_commemoration_banner.MM_HOME_ISSUEBANNER:nth-child(2) > div.cui_commemoration_banner > div.ccb_banner:first-child
+m.naver.com###_MM_WRAP_nmap_sports_1
+m.naver.com###_MM_WRAP_nmap_sports_2
+m.naver.com###nmap_ent_top
+m.naver.com###_MM_WRAP_nmap_ent_1
+m.naver.com###_MM_WRAP_nmap_ent_2
+m.naver.com###_MM_WRAP_nmap_ent_3
+m.naver.com###_MM_WRAP_nmap_sports_3
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(34)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_selective_box:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
 
 # Twitter ads
 ##.twitter-ad
