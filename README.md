@@ -3,7 +3,14 @@
 
 브라우저 필터와 겸용으로 사용가능합니다. (브라우저(Safari 호환) + DNS 필터)
 
-AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습니다.
+### 호환성
+- AdGuard for Windows 7.4.1
+- AdGuard for Mac 2.4
+- AdGuard for Android 3.3.3
+- AdGuard for iOS 4.0
+- AdGuard Pro for iOS 2.1.2
+
+상기 플랫폼의 버전을 기준으로 테스트가 완료되었습니다.
 
 ## 기능
 ### 광고 필터링
@@ -15,6 +22,7 @@ AdGuard Android 3.3.3, AdGuard iOS 4.0 버전에서 테스트를 완료하였습
 - 웹 트위터의 프로모션 광고
 - 네이버 애드포스트, 모바일 블로그 배너 광고
 - 네이버 웹툰 광고
+- 네이버 모바일 웹 광고(배너 광고 포함)
 
 ### 추가 기능
 - 트위터의 이미지 및 동영상 로드 속도 개선
