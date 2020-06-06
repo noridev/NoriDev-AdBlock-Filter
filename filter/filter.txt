@@ -40,7 +40,7 @@
 ||pagead2.googleadservices.com^
 ||doubleclick.net^
 ||google-analytics.com^
-||googletagservices.com
+||googletagservices.com^
 ||partnerssl.googleadservices.com^
 
 # EveryTime ads
