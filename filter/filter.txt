@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.0.8
-! TimeUpdated: 2020-06-07T14:45:00+09:00
+! Version: 1.0.8.1
+! TimeUpdated: 2020-06-07T23:49:00+09:00
 ! Expires: 1 days
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -118,6 +118,7 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:n
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
+search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 
 # Twitter
 ##.twitter-ad
