@@ -92,6 +92,7 @@ m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
 
 # Naver Web
+search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 m.naver.com###_MM_WRAP_nmap_news_channel_1
 m.naver.com###nmap_news_feed_top
 m.naver.com###nmap_news_channel_top
@@ -118,7 +119,6 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:n
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
-search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 
 # Twitter
 ##.twitter-ad
