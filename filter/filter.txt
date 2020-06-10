@@ -54,9 +54,7 @@
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
 
-! -------------
-! --- Naver ---
-! -------------
+! | Naver |
 # Web
 ||searchad-phinf.pstatic.net^
 ||m.veta.naver.com^
