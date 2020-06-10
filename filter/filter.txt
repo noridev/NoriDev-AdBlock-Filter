@@ -4,7 +4,7 @@
 ! Author: NoriDev
 ! Version: 1.0.9
 ! TimeUpdated: 2020-06-11T03:04:00+09:00
-! Expires: 1 days
+! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
 
