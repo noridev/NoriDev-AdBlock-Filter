@@ -18,7 +18,7 @@
 ! -------------------------------
 ! ----- Tracking Protection -----
 ! -------------------------------
-||analytics.ad.daum.net
+||analytics.ad.daum.net^
 ||analytics.twitter.com^$third-party
 ||analytics.twitter.com/i/adsct?
 ||cdn.api.twitter.com/*/urls/count.json$third-party
@@ -38,7 +38,7 @@
 ||partner.googleadservices.com^
 ||adservice.google.co.kr^
 ||adservice.google.com^
-||adservice.google.com.tw
+||adservice.google.com.tw^
 ||pagead2.googleadservices.com^
 ||doubleclick.net^
 ||google-analytics.com^
@@ -53,7 +53,7 @@
 ||ads-twitter.com^
 ||ads-twitter.com^$third-party^
 ||ads-api.twitter.com^
-||ads-api-sandbox.twitter.com
+||ads-api-sandbox.twitter.com^
 ||ads-bidder-api.twitter.com^
 
 ! Naver
