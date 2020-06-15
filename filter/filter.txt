@@ -3,7 +3,7 @@
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
 ! Version: 1.0.9.2
-! TimeUpdated: 2020-06-15T20:58:00+09:00
+! TimeUpdated: 2020-06-15T21:12:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -210,3 +210,27 @@ pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.s
 pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-jwEaba.bJTuJg:nth-child(2)
 pixiv.net###wrapper > div.layout-body:nth-child(3) > div._unit:first-child > div.ui-fixed-container:nth-child(3) > aside:first-child
 pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > aside:nth-child(4)
+pixiv.net###root > div.sc-qPycM.oBsxY:first-child > div.sc-qXVup.eBiJHE:last-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(6)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(7)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pQthR.fIxuQE:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.lWZjq > div.sc-jHVFih.jSXa-dI:last-child > ul.sc-jMXeNk.cOCsaz > li.sc-kIhvZT.sc-jRzjRe.sc-jWQBwj.sc-kNjHSB.bovegI:first-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(8)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(5)
+pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > aside:nth-child(4)
+pixiv.net###wrapper > div.layout-body:nth-child(3) > div._unit:first-child > div.ui-fixed-container:nth-child(3) > aside:first-child
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jGXBOd.eIyveK:nth-child(3)
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jLYYmI.jJTbRU:last-child
+pixiv.net###root > div.sc-qPycM.cxEkwX:first-child > div.sc-qXVup.eBiJHE:last-child
+pixiv.net###root > div.sc-qPycM.cxEkwX:first-child > div:first-child > div:first-child > div.sc-psPGq.goFRpE > div.sc-pzZvs.gAKExH:last-child > div.sc-pIwMV.edkJov:first-child > div.sc-pQSDG.kRhAhD:first-child
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(7)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pQthR.fIxuQE:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.lWZjq > div.sc-jHVFih.jSXa-dI:last-child > ul.sc-jMXeNk.cOCsaz > li.sc-kIhvZT.sc-jRzjRe.sc-jWQBwj.sc-kNjHSB.bovegI:first-child
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(8)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(5)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child > div.sc-jHnsnn.cyhnVR
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jILMzM.HDZpX > div.sc-jybekq.gyoUjI:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jTwuPi.hdpPpb:first-child > div.sc-jNERdU.iPOzDM:last-child
+pixiv.net###root > div.sc-qPycM.oBsxY:first-child > div:first-child > div:first-child > div.sc-psPGq.FfMGn > div.sc-pzZvs.gAKExH:last-child > div.sc-pIwMV.edkJov:first-child > div.sc-pQSDG.kRhAhD:first-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jILMzM.HDZpX > div.sc-jybekq.gyoUjI:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jTwuPi.hdpPpb:first-child > div.sc-jNERdU.iPOzDM:last-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jCeMjG.jHvvfG:nth-child(3)
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jHwEnZ.jfRddW:last-child
+
