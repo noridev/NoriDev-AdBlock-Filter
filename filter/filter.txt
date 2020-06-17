@@ -1,8 +1,8 @@
 ! Title: NoriDev AdGuard DNS Filter
 ! Description: 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.0.9.2
-! TimeUpdated: 2020-06-15T21:12:00+09:00
+! Version: 1.0.9.3
+! TimeUpdated: 2020-06-17T19:26:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter
 
@@ -71,9 +71,10 @@
 ||ad-api.band.us^
 
 # Pixiv
-ad2.fivecdm.com^
-bc2.fivecdm.com^
-pixon.ads-pixiv.net^
+||ad2.fivecdm.com^
+||bc2.fivecdm.com^
+||pixon.ads-pixiv.net^
+||imp.pixiv.net^
 
 # etc
 ||ad.adnmore.co.kr^
@@ -99,9 +100,10 @@ m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
 
-# Naver Web
-search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
-m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
+! Naver
+# Web
+naver.com###NM_TOP_BANNER
+naver.com###veta_branding
 m.naver.com###_MM_WRAP_nmap_news_channel_1
 m.naver.com###nmap_news_feed_top
 m.naver.com###nmap_news_channel_top
@@ -128,6 +130,8 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:n
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
+search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
+m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
 
 # Twitter
 ##.twitter-ad
@@ -232,4 +236,25 @@ pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jILMzM.HDZpX > div.
 pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child
 pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jCeMjG.jHvvfG:nth-child(3)
 pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jHwEnZ.jfRddW:last-child
-
+pixiv.net###root > div.sc-pAlUD.fIyNfW:first-child > div.sc-pIiMS.gMkTHs:last-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(6)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(7)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-oUNWr.Jlkze:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE > div.sc-kIhvZT.iQmwfB:last-child > ul.sc-kNiVEW.BsOJs > li.sc-jRzjRe.sc-kcjSgA.sc-khBjLF.sc-jWRPOI.WJSmL:first-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(8)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(5)
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kHIeKe.hQRMuj > div.sc-jILMzM.HDZpX:last-child > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.sc-kehdeE.eWLRKA:first-child > div.sc-kMBjom.hWZAwC:last-child
+pixiv.net###root > div.sc-pAlUD.fIyNfW:first-child > div:first-child > div:first-child > div.sc-qXiqU.lpqdIu > div.sc-pQSDG.kRhAhD:last-child > div.sc-pZpVj.dJHAFc:first-child > div.sc-oUmjU.gbrbtK:first-child
+pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kHIeKe.hQRMuj > div.sc-jILMzM.HDZpX:last-child > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE:nth-child(2) > div.sc-kcjSgA.bUmLfB:last-child
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-kJfCAv.jUqrKR:nth-child(3)
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-kOgYZa.klMAnv:last-child
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-kIzrRt.jKfyly:nth-child(2)
+pixiv.net###root > div.sc-pAlUD.bqjokR:first-child > div.sc-pIiMS.gMkTHs:last-child
+pixiv.net###root > div.sc-pAlUD.bqjokR:first-child > div:first-child > div:first-child > div.sc-qXiqU.gXaENp > div.sc-pQSDG.kRhAhD:last-child > div.sc-pZpVj.dJHAFc:first-child > div.sc-oUmjU.gbrbtK:first-child
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(6)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(7)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-oUNWr.Jlkze:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE > div.sc-kIhvZT.iQmwfB:last-child > ul.sc-kNiVEW.BsOJs > li.sc-jRzjRe.sc-kcjSgA.sc-khBjLF.sc-jWRPOI.WJSmL:first-child
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(8)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(5)
+pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jxtSxQ.lktdSe > div.sc-kcjrCq.bIKfXw:last-child > div.sc-AxhUy.eNYVWm:first-child > section.sc-pYOiM.sc-kIhWEd.kHTLLW:first-child > div.sc-jCmXbY.bbRaPR:last-child
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jMPuug.inqWxC:nth-child(3)
+pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-kIVRBn.gEnqBw:last-child
