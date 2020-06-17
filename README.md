@@ -1,5 +1,5 @@
 # NoriDev AdGuard DNS Filter
-이 필터는 모바일 기기에 최적화 되어있으며, AdGuard 전용 필터입니다. (PC에서도 사용 가능)
+모든 디바이스에서 사용할 수 있는 AdGuard 전용 필터입니다.
 
 브라우저 필터와 겸용으로 사용가능합니다. (브라우저(Safari 호환) + DNS 필터)
 
