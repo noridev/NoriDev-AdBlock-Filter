@@ -236,4 +236,3 @@ pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jILMzM.HDZpX > div.
 pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child
 pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jCeMjG.jHvvfG:nth-child(3)
 pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jHwEnZ.jfRddW:last-child
-
