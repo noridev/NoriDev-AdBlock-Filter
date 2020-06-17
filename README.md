@@ -4,11 +4,11 @@
 브라우저 필터와 겸용으로 사용가능합니다. (브라우저(Safari 호환) + DNS 필터)
 
 ### 호환성
-- AdGuard for Windows 7.4.2 or higher
-- AdGuard for Mac 2.4.8 or higher
-- AdGuard for Android 3.4 or higher
-- AdGuard for iOS 4.0.1 or higher
-- AdGuard Pro for iOS 4.0.1 or higher
+- **AdGuard for Windows** 7.4.2 or higher
+- **AdGuard for Mac** 2.4.8 or higher
+- **AdGuard for Android** 3.4 or higher
+- **AdGuard for iOS** 4.0.1 or higher
+- **AdGuard Pro for iOS** 4.0.1 or higher
 
 상기 플랫폼의 버전을 기준으로 테스트가 완료되었습니다.
 
