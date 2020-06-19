@@ -15,6 +15,12 @@
 104.76.97.13 video.twimg.com
 
 
+! ---------------------------
+! ----- Allowed Domains -----
+! ---------------------------
+@@||res-creatives.maio.jp$important
+
+
 ! -------------------------------
 ! ----- Tracking Protection -----
 ! -------------------------------
@@ -42,17 +48,13 @@
 ||mud-kage.kakaocdn.net^
 ||mud-kage.kakao.co.kr^
 
-||talk-pilsner.kakao.com^
-||img1.daumcdn.net^
-||more-api.kakao.com^
-||th-m2.talk.kakao.com^
-
 # Google
 ||pagead2.googlesyndication.com^
 ||partner.googleadservices.com^
 ||adservice.google.co.kr^
 ||adservice.google.com^
 ||adservice.google.com.tw^
+||adservice.google.tw^
 ||pagead2.googleadservices.com^
 ||doubleclick.net^
 ||google-analytics.com^
@@ -127,6 +129,7 @@
 ||ads.mopub.com^
 ||2mdn.net^
 ||ads.as.criteo.com^
+||trvdp.com^
 
 
 ! -------------------------------
