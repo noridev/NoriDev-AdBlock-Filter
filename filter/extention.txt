@@ -1,0 +1,16 @@
+﻿! 확장 필터입니다. 제작자 지향적 필터이므로, 콘텐츠가 과도하게 차단되는 경우가 있을 수 있습니다. 불필요한 항목까지 제거되는 경우, 예외 목록을 설정해서 사용하십시오.
+! Title: NoriDev AdGuard DNS Filter - Extention
+! Description: 확장 필터입니다. 제작자 지향적 필터이므로, 콘텐츠가 과도하게 차단되는 경우가 있을 수 있습니다. 불필요한 항목까지 제거되는 경우, 예외 목록을 설정해서 사용하십시오.
+! Author: NoriDev
+! Version: 1.0
+! TimeUpdated: 2020-06-19T16:21:00+09:00
+! Expires: 1 days (update frequency)
+! Homepage: https://adblock.noridev.moe/html/extension.html
+
+
+! -------------------------------
+! ----- Site element hiding -----
+! -------------------------------
+! Naver
+# Web
+naver.com###NM_THEMECAST_CONTENTS_CONTAINER
