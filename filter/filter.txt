@@ -42,11 +42,6 @@
 ||mud-kage.kakaocdn.net^
 ||mud-kage.kakao.co.kr^
 
-||talk-pilsner.kakao.com^
-||img1.daumcdn.net^
-||more-api.kakao.com^
-||th-m2.talk.kakao.com^
-
 # Google
 ||pagead2.googlesyndication.com^
 ||partner.googleadservices.com^
