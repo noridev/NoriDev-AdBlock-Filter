@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.2b5
-! TimeUpdated: 2020-06-26T18:24:00+09:00
+! Version: 1.3b6
+! TimeUpdated: 2020-06-28T16:26:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -27,7 +27,6 @@
 ! -------------------------------
 ||analytics.ad.daum.net^
 ||analytics.twitter.com^$third-party
-||analytics.twitter.com/i/adsct?
 ||cdn.api.twitter.com/*/urls/count.json$third-party
 ||twitter.com/i/jot
 
@@ -69,54 +68,41 @@
 
 # Twitter
 ||ads-twitter.com^
-||ads-twitter.com^$third-party^
 ||ads-api.twitter.com^
 ||ads-api-sandbox.twitter.com^
 ||ads-bidder-api.twitter.com^
 
 ! Naver
-# Web
+# Common
 ||searchad-phinf.pstatic.net^
-||tvetamovie.pstatic.net.dn.gscdn.net^
+||adc.naver.com^
+||adcreative.naver.com^
+||bb.ad.naver.com^
+||ia.www.naver.com^
+||l.m.naver.com^
+||ad.naver.com^
+||saedu.naver.com^
+||syndication.openapi.naver.com^
+||veta.naver.com^
+||veta.naver.com.nheos.com^
+||wrd.naver.com^
+# Web
+||ad.nbms.naver.com^
+||ad.news.naver.com^
+||creative.nbms.naver.com^
+||castbox.shopping.naver.com^
 ||tvetamovie.pstatic.net^
-||siape.veta.naver.com^
-||siape.veta.naver.com.nheos.com^
-||m.veta.naver.com^
-||m.veta.naver.com.nheos.com^
-||ad.nbms.naver.com
-||ad.news.naver.com
-||adc.naver.com
-||adcreative.naver.com
-||bb.ad.naver.com
-||castbox.shopping.naver.com
-||creative.nbms.naver.com
-||ia.www.naver.com
-||l.m.naver.com
-||nv.ad.naver.com
-||nv.veta.naver.com
-||nv1.ad.naver.com
-||nv1.veta.naver.com
-||nv2.ad.naver.com
-||nv2.veta.naver.com
-||nv3.ad.naver.com
-||nv4.ad.naver.com
-||nv4.ad.naver.com 
-||saedu.naver.com
-||syndication.openapi.naver.com
-||veta.naver.com
-||wrd.naver.com
-# Cafe
-||gfp.veta.naver.com^
+||tvetamovie.pstatic.net.dn.gscdn.net^
 # Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
 # TV
-||ad.nmv.naver.com
-||ams.rmcnmv.naver.com
-||cpv.ad.naver.com
-||damoive.dn.naver.com
-||videost.nmv.naver.com
-||vts.rmcnmv.naver.com
+||ad.nmv.naver.com^
+||ams.rmcnmv.naver.com^
+||cpv.ad.naver.com^
+||damoive.dn.naver.com^
+||videost.nmv.naver.com^
+||vts.rmcnmv.naver.com^
 
 # pixiv
 ||ad2.fivecdm.com^
@@ -132,6 +118,8 @@
 ||2mdn.net^
 ||ads.as.criteo.com^
 ||trvdp.com^
+||dable.io^
+||popin.cc^
 
 
 ! ----------------------------------------
@@ -181,6 +169,120 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:n
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
+m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_weather._MM_WEATHER_BANNER.NOW_USER_TYPE_DATA:nth-child(3) > div.cui_weather.cw_now_with.MM_FOLDABLE > div.cw_cnow:first-child > div.cw_now_wrap.MM_NOW_WRAP.MM_INACTIVE:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###_MM_REGION_TAB > div.cp_alarm_area:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_uio_cd_fbanner:nth-child(12)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_uio_cd_fbanner:nth-child(12)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
 # Blog
