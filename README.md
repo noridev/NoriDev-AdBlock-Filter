@@ -74,3 +74,9 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 5. **필터 추가**를 클릭합니다.
 6. **필터 주소**에 아래 링크를 붙여넣고 **다음**을 클릭한 뒤 **추가**를 누릅니다.
 <pre>https://raw.githubusercontent.com/NoriDev/NoriDev-AdGuard-DNS-Filter/beta/filter/filter.txt</pre>
+
+## Troubleshooting
+### 카카오톡
+#### 폰트 목록이 갱신되지 않거나 다운로드를 받을 수 없음
+1. DNS 필터링 허용 목록에 **mud-kage.kakao.co.kr**을 추가합니다.
+2. 폰트 적용이 완료되면 허용 목록에서 추가했던 도메인을 삭제합니다.
