@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.3b7
-! TimeUpdated: 2020-06-29T15:35:00+09:00
+! Version: 1.3b8
+! TimeUpdated: 2020-07-06T19:05:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -34,7 +34,7 @@
 ! ---------------
 ! ----- ads -----
 ! ---------------
-# KakaoTalk
+! [ KakaoTalk ]
 ||ad-content.moment.kakao.com^
 ||kyson.ad.daum.net^
 ||display.ad.daum.net^
@@ -47,7 +47,7 @@
 ||adserver.rockwell.kakao.com^
 ||mud-kage.kakao.co.kr^
 
-# Google
+! [ Google ]
 ||pagead2.googlesyndication.com^
 ||partner.googleadservices.com^
 ||adservice.google.co.kr^
@@ -61,18 +61,18 @@
 ||partnerssl.googleadservices.com^
 ||googletagmanager.com^
 
-# EveryTime
+! [ EveryTime ]
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
 
-# Twitter
+! [ Twitter ]
 ||ads-twitter.com^
 ||ads-api.twitter.com^
 ||ads-api-sandbox.twitter.com^
 ||ads-bidder-api.twitter.com^
 
-! Naver
-# Common
+! [ Naver ]
+! Common
 ||searchad-phinf.pstatic.net^
 ||adc.naver.com^
 ||adcreative.naver.com^
@@ -85,17 +85,17 @@
 ||veta.naver.com^
 ||veta.naver.com.nheos.com^
 ||wrd.naver.com^
-# Web
+! Web
 ||ad.nbms.naver.com^
 ||ad.news.naver.com^
 ||creative.nbms.naver.com^
 ||castbox.shopping.naver.com^
 ||tvetamovie.pstatic.net^
 ||tvetamovie.pstatic.net.dn.gscdn.net^
-# Band
+! Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
-# TV
+! TV
 ||ad.nmv.naver.com^
 ||ams.rmcnmv.naver.com^
 ||cpv.ad.naver.com^
@@ -103,13 +103,16 @@
 ||videost.nmv.naver.com^
 ||vts.rmcnmv.naver.com^
 
-# pixiv
+! [ pixiv ]
 ||ad2.fivecdm.com^
 ||bc2.fivecdm.com^
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
-# etc
+! [ Tmoney ]
+||mktp.tmoney.co.kr^
+
+! [ etc ]
 ||ad.adnmore.co.kr^
 ||adapi.about.co.kr^
 ||advimg.ad-mapps.com^
@@ -124,22 +127,22 @@
 ! ----------------------------------------
 ! ----- Adblock Warning Removal List -----
 ! ----------------------------------------
-# HulKpop
+! [ HulKpop ]
 hulkpop.top##div[class^="k"]
 
 
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
-# EvetyTime
+! [ EvetyTime ]
 everytime.kr###container > div.banners:nth-child(2)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
 everytime.kr###sheet
 
-! Naver
-# Web
+! [ Naver ]
+! Web
 naver.com###NM_TOP_BANNER
 naver.com###veta_branding
 m.naver.com###_MM_WRAP_nmap_news_channel_1
@@ -285,14 +288,14 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:l
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
-# Blog
+! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
 
-! Twitter
-# ads & Promoted Tweets
+! [ Twitter ]
+! ads & Promoted Tweets
 ##.twitter-ad
 twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
@@ -318,14 +321,14 @@ twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Twee
 mobile.twitter.com#?#.tweet:-abp-has(.promo)
 mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
 mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
-# Trends for you & Who to follow 
+! Trends for you & Who to follow 
 twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
 twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
 twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
 twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
 twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
 
-# pixiv
+! [ pixiv ]
 pixiv.net###root > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:last-child
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(6)
 pixiv.net###root > div[class^="sc-"]:nth-child(2) > div:first-child > div:first-child > div[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child > div[class^="sc-"]:first-child
@@ -347,10 +350,11 @@ pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="u"] > div[class^
 pixiv.net###wrapper > div.layout-body:nth-child(3) > div._unit:first-child > div.ui-fixed-container:nth-child(3) > aside:first-child
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(3)
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > section[class^="sc-"]:last-child
-pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:nth-child(2)
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:first-child > div[class^="sc-"]:last-child
 pixiv.net###root > div[class^="sc-"]:nth-child(4)
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:nth-child(2) > div[class^="j"]:last-child
 pixiv.net###wrapper > div.ad-footer:nth-child(6)
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > main[class^="sc-"]:first-child > section[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(4)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(3)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
