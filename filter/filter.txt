@@ -1,8 +1,8 @@
 ! Title: NoriDev AdGuard DNS Filter
-! Description: 카카오톡 채팅 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
+! Description: 카카오톡 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.2
-! TimeUpdated: 2020-06-26T16:14:00+09:00
+! Version: 1.3
+! TimeUpdated: 2020-07-06T22:08:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter
 
@@ -26,7 +26,6 @@
 ! -------------------------------
 ||analytics.ad.daum.net^
 ||analytics.twitter.com^$third-party
-||analytics.twitter.com/i/adsct?
 ||cdn.api.twitter.com/*/urls/count.json$third-party
 ||twitter.com/i/jot
 
@@ -34,7 +33,7 @@
 ! ---------------
 ! ----- ads -----
 ! ---------------
-# KakaoTalk
+! [ KakaoTalk ]
 ||ad-content.moment.kakao.com^
 ||kyson.ad.daum.net^
 ||display.ad.daum.net^
@@ -45,10 +44,9 @@
 ||track.tiara.kakao.com^
 ||track.tiara.daum.net^
 ||adserver.rockwell.kakao.com^
-||mud-kage.kakaocdn.net^
 ||mud-kage.kakao.co.kr^
 
-# Google
+! [ Google ]
 ||pagead2.googlesyndication.com^
 ||partner.googleadservices.com^
 ||adservice.google.co.kr^
@@ -62,68 +60,58 @@
 ||partnerssl.googleadservices.com^
 ||googletagmanager.com^
 
-# EveryTime
+! [ EveryTime ]
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
 
-# Twitter
+! [ Twitter ]
 ||ads-twitter.com^
-||ads-twitter.com^$third-party^
 ||ads-api.twitter.com^
 ||ads-api-sandbox.twitter.com^
 ||ads-bidder-api.twitter.com^
 
-! Naver
-# Web
+! [ Naver ]
+! Common
 ||searchad-phinf.pstatic.net^
-||tvetamovie.pstatic.net.dn.gscdn.net^
+||adc.naver.com^
+||adcreative.naver.com^
+||bb.ad.naver.com^
+||ia.www.naver.com^
+||l.m.naver.com^
+||ad.naver.com^
+||saedu.naver.com^
+||syndication.openapi.naver.com^
+||veta.naver.com^
+||veta.naver.com.nheos.com^
+||wrd.naver.com^
+! Web
+||ad.nbms.naver.com^
+||ad.news.naver.com^
+||creative.nbms.naver.com^
+||castbox.shopping.naver.com^
 ||tvetamovie.pstatic.net^
-||siape.veta.naver.com^
-||siape.veta.naver.com.nheos.com^
-||m.veta.naver.com^
-||m.veta.naver.com.nheos.com^
-||ad.nbms.naver.com
-||ad.news.naver.com
-||adc.naver.com
-||adcreative.naver.com
-||bb.ad.naver.com
-||castbox.shopping.naver.com
-||creative.nbms.naver.com
-||ia.www.naver.com
-||l.m.naver.com
-||nv.ad.naver.com
-||nv.veta.naver.com
-||nv1.ad.naver.com
-||nv1.veta.naver.com
-||nv2.ad.naver.com
-||nv2.veta.naver.com
-||nv3.ad.naver.com
-||nv4.ad.naver.com
-||nv4.ad.naver.com 
-||saedu.naver.com
-||syndication.openapi.naver.com
-||veta.naver.com
-||wrd.naver.com
-# Cafe
-||gfp.veta.naver.com^
-# Band
+||tvetamovie.pstatic.net.dn.gscdn.net^
+! Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
-# TV
-||ad.nmv.naver.com
-||ams.rmcnmv.naver.com
-||cpv.ad.naver.com
-||damoive.dn.naver.com
-||videost.nmv.naver.com
-||vts.rmcnmv.naver.com
+! TV
+||ad.nmv.naver.com^
+||ams.rmcnmv.naver.com^
+||cpv.ad.naver.com^
+||damoive.dn.naver.com^
+||videost.nmv.naver.com^
+||vts.rmcnmv.naver.com^
 
-# pixiv
+! [ pixiv ]
 ||ad2.fivecdm.com^
 ||bc2.fivecdm.com^
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
-# etc
+! [ Tmoney ]
+||mktp.tmoney.co.kr^
+
+! [ etc ]
 ||ad.adnmore.co.kr^
 ||adapi.about.co.kr^
 ||advimg.ad-mapps.com^
@@ -131,27 +119,29 @@
 ||2mdn.net^
 ||ads.as.criteo.com^
 ||trvdp.com^
+||dable.io^
+||popin.cc^
 
 
 ! ----------------------------------------
 ! ----- Adblock Warning Removal List -----
 ! ----------------------------------------
-# HulKpop
+! [ HulKpop ]
 hulkpop.top##div[class^="k"]
 
 
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
-# EvetyTime
+! [ EvetyTime ]
 everytime.kr###container > div.banners:nth-child(2)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
 everytime.kr###sheet
 
-! Naver
-# Web
+! [ Naver ]
+! Web
 naver.com###NM_TOP_BANNER
 naver.com###veta_branding
 m.naver.com###_MM_WRAP_nmap_news_channel_1
@@ -180,15 +170,131 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:n
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(11)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_nmap.MM_DA_BRANDING_BANNER.ON_CHANGE_BRICKVOWEL:nth-child(5)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:nth-child(7)
+m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_weather._MM_WEATHER_BANNER.NOW_USER_TYPE_DATA:nth-child(3) > div.cui_weather.cw_now_with.MM_FOLDABLE > div.cw_cnow:first-child > div.cw_now_wrap.MM_NOW_WRAP.MM_INACTIVE:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###_MM_REGION_TAB > div.cp_alarm_area:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_news > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.cui_cupid_news.ccn_journal._MM_NEWS_FEED_BOTTOM_BANNER:nth-child(11)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(6)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_txtlink:nth-child(7)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_text._MM_CONTENT_HISTORY_BANNER:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container:first-child > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_selective > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_selective_box:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_sports > div.grid1_wrap.brick-house.news_wrap:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_sports_special:nth-child(4) > div.cui_sports_special > div.css_title_wrap.css_banner:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_data > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_data:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:first-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_enter:first-child > div.grid1_wrap.brick-house:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_ent > div.grid1_wrap.news_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_cupid_news._MM_PAGING_STATIC_CONT:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(3)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shopping > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_enter > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_cupid_news.MM_PANEL_SURVEY:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_uio_cd_fbanner:nth-child(12)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_place > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_uio_cd_fbanner:nth-child(12)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:nth-child(2) > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_PICK:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(2)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(8)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_banner:last-child
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_TREND_SHOP:nth-child(5)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
+m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
+search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
-# Blog
+! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
 
-# Twitter
+! [ Twitter ]
+! ads & Promoted Tweets
 ##.twitter-ad
 twitter.com,wral.com##.promotion
 twitter.com##.suggested-tweet-stream-container
@@ -214,102 +320,41 @@ twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Twee
 mobile.twitter.com#?#.tweet:-abp-has(.promo)
 mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
 mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
+! Trends for you & Who to follow 
+twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
+twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
+twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
+twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
+twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
 
-# pixiv
-pixiv.net#?#li[size="2"]
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(4) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div:last-child > div.sc-jSphag.ftZTMI > ul.sc-jXrhex.cFleIk > li.sc-kcsddO.sc-khudif.sc-jLYMDn.iWYNgk:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(4) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div:last-child > div.sc-jSphag.ftZTMI > ul.sc-jXrhex.cFleIk > li.sc-kcsddO.sc-khudif.sc-jLYMDn.iWYNgk:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(6)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-kOFzkc.dfJakG:nth-child(2)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-kMZwpj.gnCkRT:nth-child(3)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jRYQbI.giaubp:last-child
-pixiv.net###root > div.sc-pYZcj.hedvMD:first-child > div.sc-oTDAo.iPLCIH:last-child
-pixiv.net###root > div.sc-pYZcj.drlISc:first-child > div.sc-oTDAo.iPLCIH:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div:last-child > div.sc-jSphag.ftZTMI > ul.sc-jXrhex.cFleIk > li.sc-kcsddO.sc-khudif.sc-jLYMDn.gGnhMv:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div:last-child > div.sc-jSphag.ftZTMI > ul.sc-jXrhex.cFleIk > li.sc-kcsddO.sc-khudif.sc-jLYMDn.gGnhMv:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div.sc-jSphag.ftZTMI:last-child > ul.sc-jXrhex.cFldRN > li.sc-kcsddO.sc-jwTQvo.sc-jBVQzF.sc-khtOsm.iNuuBU:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pbWyc.emWXgo:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oTZKJ.HHLbu > div.sc-jSphag.ftZTMI:last-child > ul.sc-jXrhex.cFldRN > li.sc-kcsddO.sc-jwTQvo.sc-jBVQzF.sc-khtOsm.iNuuBU:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jxJyOx.gsIvZI:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pcveb.ipGLgd:nth-child(4) > div.sc-AxhUy.eNYVWm > section.sc-oUzgy.ldlOfc > div:last-child > div.sc-kOFPFJ.jkCdqd > ul.sc-jRqOQj.iTaJto > li.sc-jWsovm.sc-kcbxfF.sc-jHVFih.gFVBQH:first-child
-pixiv.net###root > div.sc-pIwMV.cTlxBX:first-child > div.sc-pQSDG.kRhAhD:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jTwuPi.hdpPpb:nth-child(6)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jHvNoi.dQYFsS:nth-child(4)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jMNeTn.iLXEM:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-jIcZaI.gaGkWQ:nth-child(2)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pcveb.ipGLgd:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oUzgy.ldlOfc > div:last-child > div.sc-kOFPFJ.jkCdqd > ul.sc-jRqOQj.iTaJto > li.sc-jWsovm.sc-kcbxfF.sc-jHVFih.cTomwE:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jTwuPi.hdpPpb:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcaWBv.kmEBPU > div.sc-jRrput.uNyLF:last-child > div.sc-AxhUy.eNYVWm > section.sc-oUzgy.sc-jHfWOY.gxeHLj:first-child > div.sc-khSEYV.jQbfdw:last-child
-pixiv.net###root > div.sc-pIwMV.hWkiTg:first-child > div.sc-pQSDG.kRhAhD:last-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pcveb.ipGLgd:nth-child(4) > div.sc-AxhUy.eNYVWm > section.sc-oUzgy.ldlOfc > div:last-child > div.sc-kOFPFJ.jkCdqd > ul.sc-jRqOQj.iTaJto > li.sc-jWsovm.sc-kcbxfF.sc-jHVFih.gFVBQH:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jTwuPi.hdpPpb:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jTwuPi.hdpPpb:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pcveb.ipGLgd:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-oUzgy.ldlOfc > div:last-child > div.sc-kOFPFJ.jkCdqd > ul.sc-jRqOQj.iTaJto > li.sc-jWsovm.sc-kcbxfF.sc-jHVFih.cTomwE:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcaWBv.kmEBPU > div.sc-jRrput.uNyLF:last-child > div.sc-AxhUy.eNYVWm:first-child > section.sc-oUzgy.sc-jHfWOY.gxeHLj:first-child > div.sc-khSEYV.jQbfdw:last-child
-pixiv.net###root > div.sc-pQSDG.yNasX:first-child > div.sc-pZpVj.cNUEUg:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(5)
-pixiv.net###root > div.sc-pQSDG.dHuxDA:first-child > div.sc-pZpVj.cNUEUg:last-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jybekq.gyoUjI:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jHVeDX.juzBsD > div.sc-jxlxwV.fLAGJJ:last-child > div.sc-AxhUy.eNYVWm > section.sc-pcveb.sc-jRrput.uNyLF:first-child > div.sc-jMxoud.blaojf:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-kNPSwH.bHxNvT:nth-child(4)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jSfkrD.hSqdTM:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-jWubRl.jYEcuC:nth-child(2)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jxBRBR.iZqjMI:nth-child(4)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jCDoaw.goyXzO:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-jwEaba.bJTuJg:nth-child(2)
-pixiv.net###wrapper > div.layout-body:nth-child(3) > div._unit:first-child > div.ui-fixed-container:nth-child(3) > aside:first-child
+! [ pixiv ]
+pixiv.net###root > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:last-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(6)
+pixiv.net###root > div[class^="sc-"]:nth-child(2) > div:first-child > div:first-child > div[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child > div[class^="sc-"]:first-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(4) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(7)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(3) > div[class^="sc-"] > section[class^="j"] > div[class^="sc-"]:last-child > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(8)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(5)
 pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > aside:nth-child(4)
-pixiv.net###root > div.sc-qPycM.oBsxY:first-child > div.sc-qXVup.eBiJHE:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-pQthR.fIxuQE:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.lWZjq > div.sc-jHVFih.jSXa-dI:last-child > ul.sc-jMXeNk.cOCsaz > li.sc-kIhvZT.sc-jRzjRe.sc-jWQBwj.sc-kNjHSB.bovegI:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(5)
-pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > aside:nth-child(4)
+pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > div:nth-child(6)
+pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > div:nth-child(8)
+pixiv.net###wrapper > div.ad-footer:nth-child(4)
+pixiv.net###header-banner
+pixiv.net###wrapper > div.layout-body:nth-child(2) > div._unit > div:last-child
+pixiv.net###js-mount-point-header > div[class^="sc-"] > div > div:first-child > div[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child > div[class^="sc-"]:first-child
+pixiv.net###wrapper > div.ad-footer:nth-child(5)
+pixiv.net###wrapper > div.ad-footer:nth-child(12)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="u"] > div[class^="_"]:last-child > div:last-child
 pixiv.net###wrapper > div.layout-body:nth-child(3) > div._unit:first-child > div.ui-fixed-container:nth-child(3) > aside:first-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jGXBOd.eIyveK:nth-child(3)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jLYYmI.jJTbRU:last-child
-pixiv.net###root > div.sc-qPycM.cxEkwX:first-child > div.sc-qXVup.eBiJHE:last-child
-pixiv.net###root > div.sc-qPycM.cxEkwX:first-child > div:first-child > div:first-child > div.sc-psPGq.goFRpE > div.sc-pzZvs.gAKExH:last-child > div.sc-pIwMV.edkJov:first-child > div.sc-pQSDG.kRhAhD:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-pQthR.fIxuQE:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.lWZjq > div.sc-jHVFih.jSXa-dI:last-child > ul.sc-jMXeNk.cOCsaz > li.sc-kIhvZT.sc-jRzjRe.sc-jWQBwj.sc-kNjHSB.bovegI:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jRYQbI.giaubp:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child > div.sc-jHnsnn.cyhnVR
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jILMzM.HDZpX > div.sc-jybekq.gyoUjI:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jTwuPi.hdpPpb:first-child > div.sc-jNERdU.iPOzDM:last-child
-pixiv.net###root > div.sc-qPycM.oBsxY:first-child > div:first-child > div:first-child > div.sc-psPGq.FfMGn > div.sc-pzZvs.gAKExH:last-child > div.sc-pIwMV.edkJov:first-child > div.sc-pQSDG.kRhAhD:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-jILMzM.HDZpX > div.sc-jybekq.gyoUjI:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jTwuPi.hdpPpb:first-child > div.sc-jNERdU.iPOzDM:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcjrCq.bIKfXw > div.sc-jRzKvo.CzuZm:last-child > div.sc-AxhUy.eNYVWm > section.sc-pIWiK.sc-jHVeDX.juzBsD:first-child > div.sc-khcwgy.lnnbWb:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jCeMjG.jHvvfG:nth-child(3)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-jHwEnZ.jfRddW:last-child
-pixiv.net###root > div.sc-pAlUD.fIyNfW:first-child > div.sc-pIiMS.gMkTHs:last-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-oUNWr.Jlkze:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE > div.sc-kIhvZT.iQmwfB:last-child > ul.sc-kNiVEW.BsOJs > li.sc-jRzjRe.sc-kcjSgA.sc-khBjLF.sc-jWRPOI.WJSmL:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kHIeKe.hQRMuj > div.sc-jILMzM.HDZpX:last-child > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.sc-kehdeE.eWLRKA:first-child > div.sc-kMBjom.hWZAwC:last-child
-pixiv.net###root > div.sc-pAlUD.fIyNfW:first-child > div:first-child > div:first-child > div.sc-qXiqU.lpqdIu > div.sc-pQSDG.kRhAhD:last-child > div.sc-pZpVj.dJHAFc:first-child > div.sc-oUmjU.gbrbtK:first-child
-pixiv.net###root > div.sc-AxiKw.dGQXSM:nth-child(2) > div.sc-kHIeKe.hQRMuj > div.sc-jILMzM.HDZpX:last-child > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE:nth-child(2) > div.sc-kcjSgA.bUmLfB:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-kJfCAv.jUqrKR:nth-child(3)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-kOgYZa.klMAnv:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-fznWOq.sc-kIzrRt.jKfyly:nth-child(2)
-pixiv.net###root > div.sc-pAlUD.bqjokR:first-child > div.sc-pIiMS.gMkTHs:last-child
-pixiv.net###root > div.sc-pAlUD.bqjokR:first-child > div:first-child > div:first-child > div.sc-qXiqU.gXaENp > div.sc-pQSDG.kRhAhD:last-child > div.sc-pZpVj.dJHAFc:first-child > div.sc-oUmjU.gbrbtK:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(6)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(7)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-oUNWr.Jlkze:nth-child(3) > div.sc-AxhUy.eNYVWm > section.sc-pYOiM.MReRE > div.sc-kIhvZT.iQmwfB:last-child > ul.sc-kNiVEW.BsOJs > li.sc-jRzjRe.sc-kcjSgA.sc-khBjLF.sc-jWRPOI.WJSmL:first-child
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(8)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-kcIxiK.gEcCjV:nth-child(5)
-pixiv.net###root > div.sc-AxiKw.jfajJL:nth-child(2) > div.sc-jxtSxQ.lktdSe > div.sc-kcjrCq.bIKfXw:last-child > div.sc-AxhUy.eNYVWm:first-child > section.sc-pYOiM.sc-kIhWEd.kHTLLW:first-child > div.sc-jCmXbY.bbRaPR:last-child
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > div.sc-jMPuug.inqWxC:nth-child(3)
-pixiv.net###root > div.sc-AxjAm.bcMPWx:nth-child(2) > div.sc-AxirZ.gHkhk > div.sc-AxhCb.eSwYtm:first-child > aside.sc-Axmtr.hvJMgY:last-child > section.sc-fzolEj.sc-fzqPZZ.sc-kIVRBn.gEnqBw:last-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(3)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > section[class^="sc-"]:last-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:first-child > div[class^="sc-"]:last-child
+pixiv.net###root > div[class^="sc-"]:nth-child(4)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:nth-child(2) > div[class^="j"]:last-child
+pixiv.net###wrapper > div.ad-footer:nth-child(6)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > main[class^="sc-"]:first-child > section[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(4)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(3)
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(4) > div[class^="sc-"] > section[class^="j"] > div[class^="sc-"]:last-child > ul[class^="sc-"] > li[class^="sc-"]:first-child
