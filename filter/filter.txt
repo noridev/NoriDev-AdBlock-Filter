@@ -1,8 +1,8 @@
 ! Title: NoriDev AdGuard DNS Filter
 ! Description: 카카오톡 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.5
-! TimeUpdated: 2020-07-15T09:48:00+09:00
+! Version: 1.6
+! TimeUpdated: 2020-08-18T16:40:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter
 
@@ -102,6 +102,11 @@
 ||damoive.dn.naver.com^
 ||videost.nmv.naver.com^
 ||vts.rmcnmv.naver.com^
+! Webtoon
+||ads.moot.us^
+||ads.moot.us.nheos.com^
+||naverwebtoon-phinf.pstatic.net.static.gscdn.net^
+||naverwebtoon-phinf.pstatic.net^
 
 ! [ pixiv ]
 ||ad2.fivecdm.com^
@@ -289,6 +294,7 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:f
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:first-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(10)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
+m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_napp_bannernew:nth-child(3)
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
@@ -326,11 +332,11 @@ mobile.twitter.com#?#.tweet:-abp-has(.promo)
 mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
 mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
 ! Trends for you & Who to follow 
-twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
-twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
-twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
-twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
-twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
 
 ! [ pixiv ]
 pixiv.net###root > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:last-child
@@ -367,6 +373,23 @@ pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4)
 pixiv.net###spa-contents > div:nth-child(4) > div:first-child
 pixiv.net###spa-contents > footer:nth-child(5) > nav.sub:first-child > div.premium-lead-t-footer:nth-child(2)
 pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div:last-child > div:nth-child(3)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(4)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(6) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(8)
+pixiv.net###root > div:last-child > div[class^="sc-"]:first-child > div:first-child > div:first-child > div[class^="sc-"] > div[class^="sc-"]:last-child > div[class^="sc-"]:first-child > div[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:first-child > div[class^="sc-"]:last-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(3)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(7)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(6)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div[class^="sc-"]:last-child > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(11)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:first-child > div[class^="sc-"]:last-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="e"] > div[class^="sc-"]:last-child > div[class^="sc-"] > section[class^="j"]:nth-child(2) > div[class^="j"]:last-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(5)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > section[class^="sc-"]:last-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:nth-child(2)
 
 ! [ Clien ]
 ##iframe[src*="//server.cpmstar.com/cached/client/"][src*="/carouselv1.html"]
@@ -391,6 +414,10 @@ www-clien-net.cdn.ampproject.org##div.list_bottom_ad
 www-clien-net.cdn.ampproject.org##div.list_center_ad
 www-clien-net.cdn.ampproject.org##div.list_top_ad
 www-clien-net.cdn.ampproject.org##div.view_top_ad
+
+! [ Coupang ]
+coupang.com###coupang-banner
+coupang.com###searchOptionForm > div.search-wrapper:last-child > div.search-content.search-content-with-feedback:nth-child(2) > div.srp-top-banner-container:nth-child(3)
 
 ! [ etc ]
 good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.sidebar_right:first-child > div.container.template-blog.template-single-blog > main.content.units.av-content-small.alpha.av-blog-meta-author-disabled.av-blog-meta-comments-disabled.av-blog-meta-html-info-disabled:first-child > div.code-block.code-block-7:nth-child(2) > div
