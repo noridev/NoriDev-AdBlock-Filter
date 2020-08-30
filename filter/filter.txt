@@ -1,8 +1,8 @@
 ! Title: NoriDev AdGuard DNS Filter
 ! Description: 카카오톡 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.6.1
-! TimeUpdated: 2020-08-18T17:03:00+09:00
+! Version: 1.6.2
+! TimeUpdated: 2020-08-30T16:28:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter
 
@@ -369,7 +369,6 @@ pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"] > div[clas
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(3)
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(5) > div[class^="sc-"] > section[class^="j"] > div:last-child > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="j"]:nth-child(4) > div[class^="sc-"] > section[class^="j"] > div[class^="sc-"]:last-child > ul[class^="sc-"] > li[class^="sc-"]:first-child
-pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4)
 pixiv.net###spa-contents > div:nth-child(4) > div:first-child
 pixiv.net###spa-contents > footer:nth-child(5) > nav.sub:first-child > div.premium-lead-t-footer:nth-child(2)
 pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div:last-child > div:nth-child(3)
@@ -391,6 +390,41 @@ pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^=
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > section[class^="sc-"]:last-child
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:nth-child(2)
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > main[class^="sc-"]:first-child > section[class^="sc-"] > div[class^="sc-"]:first-child > div[class^="sc-"] > div[class^="sc-"]:nth-child(3)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(3)
+pixiv.net###modal-mymenu > div.modal-mymenu-content > div.mini-profile:first-child > a.premium-lead-t-side-menu-mini-profile
+pixiv.net###modal-mymenu > div.modal-mymenu-content > div.wc-menu:last-child > ul:nth-child(10) > li:nth-child(2)
+pixiv.net###container > div.premium-lead-new-t-info-home-top
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(11) > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div.illust-details-view:last-child > div:last-child > div > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div:last-child > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div.illust-details-view:last-child > div.ad-overlay-hide-area:nth-child(13) > div:nth-child(2)
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(3) > div:last-child > div > div.banner-ad-footer-scale:last-child
+pixiv.net###container > footer:nth-child(7) > nav.sub > div.premium-lead-t-footer:nth-child(2)
+pixiv.net###spa-contents > div.ranking-page:nth-child(4) > div:nth-child(5) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div.ranking-page:nth-child(4) > div:nth-child(6) > div > div:last-child > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div:nth-child(3) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div:last-child > div > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div:nth-child(5) > div.ad-frame-container.t_pager_super
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(2) > div.premium-lead-new-t-info-home-top:first-child
+pixiv.net###discovery > div:nth-child(3) > div:first-child > div > div.ad-frame-container.t_header
+pixiv.net###discovery > div:nth-child(3) > div > div:nth-child(3) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div.illust-details-view:last-child > div.ad-overlay-hide-area:nth-child(13) > div > div > div.ad-frame-container.t_comment_tag
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(2) > div:last-child > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div:last-child > div > div.banner-ad-footer-scale:last-child
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(3) > div:nth-child(3) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(4) > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(3) > div:last-child > div > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(3) > div:nth-child(5) > div.ad-frame-container.t_pager_super
+pixiv.net###container > footer:nth-child(8) > nav.sub > div.premium-lead-t-footer:nth-child(2)
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div:last-child > div:last-child > div > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div:last-child > div:nth-child(5) > div.ad-frame-container.t_pager_super
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(6) > div > div:last-child > div > div.ad-frame-container.t_footer
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(12) > div.ad-frame-container.overlay.geta.t_overray2
+pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div.ad-frame-container.t_header
+pixiv.net###spa-contents > div:nth-child(4) > div.works-list-wrap:nth-child(6) > div.premium-prompt-wrap:last-child
 
 ! [ Clien ]
 ##iframe[src*="//server.cpmstar.com/cached/client/"][src*="/carouselv1.html"]
@@ -422,3 +456,6 @@ coupang.com###searchOptionForm > div.search-wrapper:last-child > div.search-cont
 
 ! [ etc ]
 good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.sidebar_right:first-child > div.container.template-blog.template-single-blog > main.content.units.av-content-small.alpha.av-blog-meta-author-disabled.av-blog-meta-comments-disabled.av-blog-meta-html-info-disabled:first-child > div.code-block.code-block-7:nth-child(2) > div
+nvidia.co.kr###leftBuckets
+nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
+nvidia.co.kr###rateThisPageFooter-button
