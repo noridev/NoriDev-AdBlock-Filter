@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 에브리타임 (웹/앱) 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.7.0b1
-! TimeUpdated: 2020-11-06T05:03:00+09:00
+! Version: 1.7.0b2
+! TimeUpdated: 2020-11-10T22:39:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -76,7 +76,6 @@
 
 ! [ Naver ]
 ! Common
-||searchad-phinf.pstatic.net^
 ||adc.naver.com^
 ||adcreative.naver.com^
 ||bb.ad.naver.com^
@@ -89,7 +88,6 @@
 ||veta.naver.com.nheos.com^
 ||wrd.naver.com^
 ||lcs.naver.com^
-||adcreative.naver.com^
 ||wrd.naver.com^
 ! Web
 ||ad.nbms.naver.com^
@@ -98,6 +96,9 @@
 ||castbox.shopping.naver.com^
 ||tvetamovie.pstatic.net^
 ||tvetamovie.pstatic.net.dn.gscdn.net^
+||searchad-phinf.pstatic.net^
+! Cafe
+||golda.cafe.naver.com^
 ! Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
@@ -453,13 +454,17 @@ clien.net##div.side_ad
 clien.net##div.view_bottom_ad
 clien.net##div.view_center_ad
 clien.net##div.view_top_ad
-m.clien.net##div#comment_naverAd
-m.clien.net##div#naverAd2
 www-clien-net.cdn.ampproject.org##div.ad_fix
 www-clien-net.cdn.ampproject.org##div.list_bottom_ad
 www-clien-net.cdn.ampproject.org##div.list_center_ad
 www-clien-net.cdn.ampproject.org##div.list_top_ad
 www-clien-net.cdn.ampproject.org##div.view_top_ad
+m.clien.net##div#comment_naverAd
+m.clien.net##div#naverAd2
+m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_top_ad
+m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_center_ad
+m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_section_contents:nth-child(6) > div.main-swiper:first-child > div.shop_naver:nth-child(3)
+m.clien.net##div.list_bottom_ad
 
 ! [ Coupang ]
 coupang.com###coupang-banner
