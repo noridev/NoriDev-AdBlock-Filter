@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.7.1b1
-! TimeUpdated: 2020-11-26T03:53:00+09:00
+! Version: 1.8.0b1
+! TimeUpdated: 2020-12-09T20:38:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -11,8 +11,8 @@
 ! ------------------------------
 ! ----- Twitter Faster DNS -----
 ! ------------------------------
-! 104.76.97.12 pbs.twimg.com
-! 104.76.97.13 video.twimg.com
+104.76.97.12 pbs.twimg.com
+104.76.97.13 video.twimg.com
 
 
 ! ---------------------------
@@ -63,10 +63,6 @@
 ||googletagservices.com^
 ||partnerssl.googleadservices.com^
 ||googletagmanager.com^
-
-! [ EveryTime ]
-||ad.everytime.kr^
-||cf-eba.everytime.kr^
 
 ! [ Twitter ]
 ||ads-twitter.com^
@@ -122,8 +118,12 @@
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
-! [ Clien ]
+! [ Community ]
+! Clien
 ||m.clien.net/service/api/naverAd^$domain=m.clien.net
+! EveryTime
+||ad.everytime.kr^
+||cf-eba.everytime.kr^
 
 ! [ etc ]
 ||ad.adnmore.co.kr^
@@ -142,6 +142,7 @@
 ||g-plug.pstatic.net^
 ||ad.danawa.com^
 ||adpopcorn.com^
+||ad.cauly.co.kr^
 
 
 ! ----------------------------------------
@@ -154,13 +155,6 @@ iphonedev.co.kr###h237
 ! -------------------------------
 ! ----- Site element hiding -----
 ! -------------------------------
-! [ EvetyTime ]
-everytime.kr###container > div.banners:nth-child(2)
-everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
-everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
-everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
-everytime.kr###sheet
-
 ! [ Naver ]
 ! Web
 www.naver.com###NM_TOP_BANNER
@@ -309,6 +303,7 @@ m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_napp_bannernew:nth-child(3)
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
+msearch.shopping.naver.com###__next > div.style_wrap__37f4c > div.banners_banner_area__1OxCJ:nth-child(8) > div.banners_flick_area__W7IBy:nth-child(2)
 ! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
@@ -436,9 +431,11 @@ pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(6) > div > div:last-
 pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(12) > div.ad-frame-container.overlay.geta.t_overray2
 pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div.ad-frame-container.t_header
 pixiv.net###spa-contents > div:nth-child(4) > div.works-list-wrap:nth-child(6) > div.premium-prompt-wrap:last-child
-pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(6) > div[class^="sc-"] > section[class^="j"] > div.gtm-toppage-thumbnail-illustration-recommend-works-zone:last-child > div > div[class^="sc-"] > ul.sc-9y4be5-1.dCCrDP > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(6) > div[class^="sc-"] > section[class^="j"] > div.gtm-toppage-thumbnail-illustration-recommend-works-zone:last-child > div > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(4)
 
-! [ Clien ]
+! [ Community ]
+! Clien
 ##iframe[src*="//server.cpmstar.com/cached/client/"][src*="/carouselv1.html"]
 clien.net##div#hongboInfoList
 clien.net##div#naverAd
@@ -465,23 +462,34 @@ m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_top_ad
 m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_center_ad
 m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_section_contents:nth-child(6) > div.main-swiper:first-child > div.shop_naver:nth-child(3)
 m.clien.net##div.list_bottom_ad
+! dcinside
+game.dcinside.com###comment_li_0
+! EvetyTime
+everytime.kr###container > div.banners:nth-child(2)
+everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
+everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
+everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
+everytime.kr###sheet
 
-! [ Coupang ]
+! [ Shopping ]
+! Coupang
 coupang.com###coupang-banner
 coupang.com###searchOptionForm > div.search-wrapper:last-child > div.search-content.search-content-with-feedback:nth-child(2) > div.srp-top-banner-container:nth-child(3)
-
-! [ dcinside ]
-game.dcinside.com###comment_li_0
-
-! [ Gmarket ]
+! Gmarket
 mobile.gmarket.co.kr###srpSponsorLinkList
-
-! [ Auction ]
+! Auction
 browse.auction.co.kr###section--inner_content_body_container > div.section--module_wrap:last-child > div.component.component--sponsor_link
+! emart
+emart.ssg.com###sky_banner_tab
+
+! [ Pawoo ]
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:first-child > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(3) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(4) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
 
 ! [ etc ]
 good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.sidebar_right:first-child > div.container.template-blog.template-single-blog > main.content.units.av-content-small.alpha.av-blog-meta-author-disabled.av-blog-meta-comments-disabled.av-blog-meta-html-info-disabled:first-child > div.code-block.code-block-7:nth-child(2) > div
 nvidia.co.kr###leftBuckets
 nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
 nvidia.co.kr###rateThisPageFooter-button
-emart.ssg.com###sky_banner_tab
+
