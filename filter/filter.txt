@@ -492,4 +492,3 @@ good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.side
 nvidia.co.kr###leftBuckets
 nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
 nvidia.co.kr###rateThisPageFooter-button
-
