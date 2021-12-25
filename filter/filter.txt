@@ -2,8 +2,8 @@
 ! Title: NoriDev AdGuard DNS Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
 ! Author: NoriDev
-! Version: 1.10.0b1
-! TimeUpdated: 2021-10-27T23:45:00+09:00
+! Version: 1.10.0b2
+! TimeUpdated: 2021-12-25T15:38:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
 
@@ -145,6 +145,7 @@
 ||ad.danawa.com^
 ||adpopcorn.com^
 ||ad.cauly.co.kr^
+||ablibr.com^
 
 
 ! ----------------------------------------
