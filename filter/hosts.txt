@@ -1,0 +1,130 @@
+! Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다.
+! Title: NoriDev AdAway DNS Filter - Beta
+! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
+! Author: NoriDev
+! Version: 1.9.0b2
+! TimeUpdated: 2021-01-22T22:46:00+09:00
+! Expires: 1 days (update frequency)
+! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
+
+
+! ------------------------------
+! ----- Twitter Faster DNS -----
+! ------------------------------
+104.76.97.12 pbs.twimg.com
+104.76.97.13 video.twimg.com
+
+
+! ---------------
+! ----- ads -----
+! ---------------
+! [ Kakao ]
+127.0.0.1 ad-content.moment.kakao.com
+127.0.0.1 kyson.ad.daum.net
+127.0.0.1 display.ad.daum.net
+127.0.0.1 webid.ad.daum.net
+127.0.0.1 talkchannel-log.kakao.com
+127.0.0.1 tg.kakao.com
+127.0.0.1 stat.tiara.kakao.com
+127.0.0.1 stat.tiara.daum.net
+127.0.0.1 stat.tiara.g.daum.net
+127.0.0.1 track.tiara.kakao.com
+127.0.0.1 track.tiara.daum.net
+127.0.0.1 adserver.rockwell.kakao.com
+127.0.0.1 mud-kage.kakao.co.kr
+127.0.0.1 aem-collector.daumkakao.io
+127.0.0.1 aem-collector-prod-ytlsojie.kgslb.com
+
+! [ Google ]
+127.0.0.1 pagead2.googlesyndication.com
+127.0.0.1 partner.googleadservices.com
+127.0.0.1 adservice.google.co.kr
+127.0.0.1 adservice.google.com
+127.0.0.1 adservice.google.com.tw
+127.0.0.1 adservice.google.tw
+127.0.0.1 pagead2.googleadservices.com
+127.0.0.1 doubleclick.net
+127.0.0.1 google-analytics.com
+127.0.0.1 googletagservices.com
+127.0.0.1 partnerssl.googleadservices.com
+127.0.0.1 googletagmanager.com
+
+! [ Twitter ]
+127.0.0.1 ads-twitter.com
+127.0.0.1 ads-api.twitter.com
+127.0.0.1 ads-api-sandbox.twitter.com
+127.0.0.1 ads-bidder-api.twitter.com
+
+! [ Naver ]
+! Common
+127.0.0.1 adc.naver.com
+127.0.0.1 adcreative.naver.com
+127.0.0.1 bb.ad.naver.com
+127.0.0.1 ia.www.naver.com
+127.0.0.1 l.m.naver.com
+127.0.0.1 ad.naver.com
+127.0.0.1 saedu.naver.com
+127.0.0.1 syndication.openapi.naver.com
+127.0.0.1 veta.naver.com
+127.0.0.1 veta.naver.com.nheos.com
+127.0.0.1 wrd.naver.com
+127.0.0.1 lcs.naver.com
+127.0.0.1 wrd.naver.com
+! Web
+127.0.0.1 ad.nbms.naver.com
+127.0.0.1 ad.news.naver.com
+127.0.0.1 creative.nbms.naver.com
+127.0.0.1 castbox.shopping.naver.com
+127.0.0.1 tvetamovie.pstatic.net
+127.0.0.1 tvetamovie.pstatic.net.dn.gscdn.net
+127.0.0.1 searchad-phinf.pstatic.net
+! Cafe
+127.0.0.1 golda.cafe.naver.com
+! Band
+127.0.0.1 naverpa-phinf.pstatic.net
+127.0.0.1 ad-api.band.us
+! TV
+127.0.0.1 ad.nmv.naver.com
+127.0.0.1 ams.rmcnmv.naver.com
+127.0.0.1 cpv.ad.naver.com
+127.0.0.1 damoive.dn.naver.com
+127.0.0.1 videost.nmv.naver.com
+127.0.0.1 vts.rmcnmv.naver.com
+127.0.0.1 lcs.naver.com
+! Webtoon
+127.0.0.1 ads.moot.us
+127.0.0.1 ads.moot.us.nheos.com
+127.0.0.1 naverwebtoon-phinf.pstatic.net
+127.0.0.1 naverwebtoon-phinf.pstatic.net.static.gscdn.net
+
+! [ pixiv ]
+127.0.0.1 ad2.fivecdm.com
+127.0.0.1 bc2.fivecdm.com
+127.0.0.1 pixon.ads-pixiv.net
+127.0.0.1 imp.pixiv.net
+
+! [ Community ]
+! Clien
+127.0.0.1 m.clien.net/service/api/naverAd$domain=m.clien.net
+! EveryTime
+127.0.0.1 ad.everytime.kr
+127.0.0.1 cf-eba.everytime.kr
+
+! [ etc ]
+127.0.0.1 ad.adnmore.co.kr
+127.0.0.1 adapi.about.co.kr
+127.0.0.1 advimg.ad-mapps.com
+127.0.0.1 ads.mopub.com
+127.0.0.1 2mdn.net
+127.0.0.1 ads.as.criteo.com
+127.0.0.1 mktp.tmoney.co.kr
+127.0.0.1 trvdp.com
+127.0.0.1 dable.io
+127.0.0.1 popin.cc
+127.0.0.1 adv.imaderp.co.kr
+127.0.0.1 click.clickmon.co.kr
+127.0.0.1 *.clickmon.co.kr
+127.0.0.1 g-plug.pstatic.net
+127.0.0.1 ad.danawa.com
+127.0.0.1 adpopcorn.com
+127.0.0.1 ad.cauly.co.kr

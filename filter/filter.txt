@@ -1,10 +1,10 @@
-! Title: NoriDev AdGuard DNS Filter
-! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
+! Title: NoriDev AdBlock Filter
+! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.8.0
-! TimeUpdated: 2020-12-09T20:38:00+09:00
+! Version: 1.11.0
+! TimeUpdated: 2022-01-22T21:10:00+09:00
 ! Expires: 1 days (update frequency)
-! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter
+! Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter
 
 
 ! ------------------------------
@@ -20,6 +20,8 @@
 @@||res-creatives.maio.jp$important
 @@||media-api.maio.jp$important
 @@||ssl.pstatic.net/adimg3.search/adpost/js/adpost_show_ads_v2.min.js$script,domain=search.danawa.com|m.danawa.com|m.clien.net
+@@||dcinside.co.kr/viewmovie.php^$stealth
+@@||dcinside.co.kr/viewimage.php^$stealth
 
 
 ! -------------------------------
@@ -34,7 +36,7 @@
 ! ---------------
 ! ----- ads -----
 ! ---------------
-! [ KakaoTalk ]
+! [ Kakao ]
 ||ad-content.moment.kakao.com^
 ||kyson.ad.daum.net^
 ||display.ad.daum.net^
@@ -42,6 +44,8 @@
 ||talkchannel-log.kakao.com^
 ||tg.kakao.com^
 ||stat.tiara.kakao.com^
+||stat.tiara.daum.net^
+||stat.tiara.g.daum.net^
 ||track.tiara.kakao.com^
 ||track.tiara.daum.net^
 ||adserver.rockwell.kakao.com^
@@ -117,9 +121,37 @@
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
+! [ namuwiki ]
+||api.namu.wiki/etnews^
+||namu.news/api/articles/cached^
+||nanumnews.com/data/nanumnews_com/banner/201111264931247.jpg^
+||nanumnews.com/data/nanumnews_com/banner/2011121335056118.gif^
+||nanumnews.com/data/nanumnews_com/banner/2011121337586078.gif^
+||nanumnews.com/data/nanumnews_com/banner/2012041630519448.swf^
+||nanumnews.com/data/nanumnews_com/upload/2012042009422130.swf^
+||nanumnews.com/data/nanumnews_com/upload/bn_2012/mireco.gif^
+||nanumnews.com/news_skin/nanumnews_com/main/nanum_ad_*.html^
+||ng.namupage.com^
+
 ! [ Community ]
 ! Clien
 ||m.clien.net/service/api/naverAd^$domain=m.clien.net
+! dcinside
+||addc.dcinside.com^
+||app.dcinside.com/api/_ad_search_link*.php^
+||gall.dcinside.com/_js/ad.js^
+||gall.dcinside.com/dc_ad_*_JH.php^
+||json2.dcinside.com/json1/comment_boy_v*.php^$domain=m.dcinside.com
+||json2.dcinside.com/json0/app_ad_setting.php^
+||nstatic.dcinside.com/dgn/gallery/js/panda_tv.js^$domain=dcinside.com
+||wiki.dcinside.com/main_top_realclick_banner.php^$domain=wiki.dcinside.com
+||wstatic.dcinside.com/ad/
+||wstatic.dcinside.com/gallery/top/ad_top/
+! Fmkorea
+||fmkorea.com/_adpage/$domain=fmkorea.com
+||fmkorea.com/_loader/loader.php^$domain=fmkorea.com
+||loader.fmkorea.com/_loader/loader.php^$domain=fmkorea.com|m.fmkorea.com
+||m.fmkorea.com/_adpage/$domain=m.fmkorea.com
 ! EveryTime
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
@@ -142,6 +174,7 @@
 ||ad.danawa.com^
 ||adpopcorn.com^
 ||ad.cauly.co.kr^
+||ablibr.com^
 
 
 ! ----------------------------------------
@@ -303,11 +336,18 @@ search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
 msearch.shopping.naver.com###__next > div.style_wrap__37f4c > div.banners_banner_area__1OxCJ:nth-child(8) > div.banners_flick_area__W7IBy:nth-child(2)
+m.kin.naver.com###endContentsArea > div.sec_col1:first-child > div.banner_wrap.banner_type1:nth-child(4)
 ! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
 m.blog.naver.com###ssp-adcontent
 m.blog.naver.com###ssp-adpost
+! Band
+band.us##div:first-child > div.listKeepingRegion._mainLayoutListKeepingRegion.-show:nth-child(5) > div > section.modalLayerView._iOSMin100vh.bandAppBannerActive > div.wrap > div.container._contentsRegion:last-child > div.globalHomeSection > div.bandAppBanner.-active:first-child
+! Webtoon
+m.comic.naver.com###ct > div.section_list_toon:last-child > ul.list_toon:last-child > li.item.banner:nth-child(7)
+m.comic.naver.com##div.info_bottom:nth-child(6) > footer.footer:last-child > a.cont_app_banner:first-child
+m.comic.naver.com##div.info_bottom:nth-child(6) > div.desc_bottom:first-child
 
 ! [ Twitter ]
 ! ads & Promoted Tweets
@@ -432,6 +472,20 @@ pixiv.net###spa-contents > div:nth-child(4) > div:nth-child(5) > div > div.ad-fr
 pixiv.net###spa-contents > div:nth-child(4) > div.works-list-wrap:nth-child(6) > div.premium-prompt-wrap:last-child
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="j"]:nth-child(6) > div[class^="sc-"] > section[class^="j"] > div.gtm-toppage-thumbnail-illustration-recommend-works-zone:last-child > div > div[class^="sc-"] > ul[class^="sc-"] > li[class^="sc-"]:first-child
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(4)
+pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(4)
+
+! [ namuwiki ]
+namu.wiki##div.ad
+namu.wiki##iframe[src*="//arca.live/static/ad/"]
+nanumnews.com##body>div:nth-of-type(2)>table:nth-of-type(2)>tbody>tr>td:nth-of-type(4)>table:nth-of-type(2)>tbody>tr>td>table:nth-of-type(2)
+nanumnews.com##body>div:nth-of-type(2)>table:nth-of-type(2)>tbody>tr>td:nth-of-type(4)>table:nth-of-type(2)>tbody>tr>td>table:nth-of-type(3)
+nanumnews.com##body>div:nth-of-type(2)>table:nth-of-type(2)>tbody>tr>td:nth-of-type(4)>table:nth-of-type(2)>tbody>tr>td>table:nth-of-type(4)
+namu.wiki##iframe[src*="//arca.live/external/callad?"]
+namu.wiki#?#article > div:matches-attr("/data-v-/"):has(> div:matches-attr("/data-v-/") > div > iframe[src*="//arca.live/static/ad/powerlink_"])
+namu.wiki#?#div:matches-attr("/data-v-/"):has(> div > div > div > div:matches-attr("/data-v-/"):matches-css(justify-content: space-between) > img[src*="/w.namu.la/s/"]:nth-ancestor(4))
+namu.wiki#?#div[class]:matches-attr("/data-v-/") > div:matches-attr("/data-v-/"):not([class]):not(:has(> a[href^="/w/"]:matches-attr("/data-v-/"))):not(:has(> a:matches-attr("/data-v-/"))):not(:contains(/.{1,}/i))
+namu.wiki##article > h1 + p ~ div[id][class]
+
 
 ! [ Community ]
 ! Clien
@@ -463,6 +517,65 @@ m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_sectio
 m.clien.net##div.list_bottom_ad
 ! dcinside
 game.dcinside.com###comment_li_0
+dcinside.com###ad-layer
+m.dcinside.com##li[class="comment"]:not(div#comment)
+dcinside.com##li[id="comment_li_0"][class="ub-content dory"]
+dcid.dcinside.com##div.ban_box
+dcinside.com##div#dgn_content_de>div[style="padding-top: 16px;padding-bottom:30px;text-align: center"]
+dcinside.com##div.ad_top
+dcinside.com##div[class^="leftbanner"]
+dcinside.com##div[class^="rightbanner"]
+dcinside.com##ul.gnb_list > li.linebox
+dcinside.com##ul.gnb_list > li:nth-child(8)
+dcinside.com##div.evt_content
+dcnewsj.joins.com##div.promotion_banner
+dcinside.com,ftoday.co.kr##div.banner_box
+gall.dcinside.com##div#wif_adx_banner_wrap
+gall.dcinside.com##div#zzbang_div
+gall.dcinside.com##div.ad_bottom_list
+gall.dcinside.com##div.con_banner
+gall.dcinside.com##div.power_click
+gall.dcinside.com##div.rightbanner
+gall.dcinside.com##div.sch_alliance_box
+gall.dcinside.com##div.stickyunit
+gall.dcinside.com##form#write > div[style="height:90px;"]
+gall.dcinside.com##ul.cmt_list>li.dory.ub-content
+gall.dcinside.com##ul.reply_list>li.dory.ub-content
+m.dcinside.com##div#adbay_floatingid
+m.dcinside.com##div.adv-group
+m.dcinside.com##div.adv-groupin
+m.dcinside.com##div.adv-groupno
+m.dcinside.com##div.adv-grouptop
+m.dcinside.com##div.all-comment>ul.all-comment-lst>li.comment:not([id])>a.nick>span.dori-icon
+m.dcinside.com##div.all-comment>ul.all-comment-lst>li.comment:not([id])>a.nick>span.dori-icon-txt
+m.dcinside.com##div.all-comment>ul.all-comment-lst>li.comment:not([id])>div.dori-box
+m.dcinside.com##div.detail-top-lnk>a[href^="http://addc.dcinside.com/NetInsight/click/dcinside/adver/adver@text"]
+m.dcinside.com##h3.power-tit
+m.dcinside.com##ul.menu-scroll-lst > li.linebox
+m.dcinside.com##ul.power-lst
+wiki.dcinside.com##div.pb_area
+wiki.dcinside.com##iframe[src^="http://wiki.dcinside.com/main_top_realclick_banner.php"]
+m.dcinside.com#?#section.gall-lst-group > .detail-top-lst > li:has(> div > a > span.ntc-line-ad)
+gall.dcinside.com#?#table.gall_list > tbody > .ub-content:has(> td.gall_num:contains(AD))
+m.dcinside.com##.section_noti > .box_top[-ext-has='a[href^="http://addc.dcinside.com"]']
+dcinside.com$$script[tag-content="function adBlockDetected()"]
+gall.dcinside.com$$tr[class="ub"][tag-content="<a href='http://addc.dcinside.com"]
+dcinside.com##.adv-group
+dcinside.com##iframe[src^="https://ad.pentabox.net/"]
+dcinside.com##.banner_box
+gall.dcinside.com###admaru
+gall.dcinside.com##._BTN_AD_
+gall.dcinside.com##.power_click
+! Fmkorea
+fmkorea.com##div#adpost
+fmkorea.com##div#banner3
+fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
+fmkorea.com##iframe[src^="//www.fmkorea.com/_loader/loader.php"]
+fmkorea.com##iframe[src^="/_adpage/"]
+m.fmkorea.com##div.adpost
+m.fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
+m.fmkorea.com##iframe[src^="/_adpage/"]
+fmkorea.com###adpost
 ! EvetyTime
 everytime.kr###container > div.banners:nth-child(2)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
@@ -491,3 +604,17 @@ good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.side
 nvidia.co.kr###leftBuckets
 nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
 nvidia.co.kr###rateThisPageFooter-button
+kktoon/[0-9]/.com###banner_top_center
+kktoon/[0-9]/.com###banner_top_center
+ro-/[0-9]/.com###main-banner-view > div.col-15.col-md-9.col-sm-9 > div.row.row-15:first-child
+m.bithumb.com###appInstallInducePopup
+tokyomotion.net###active_overlay_1477648
+tokyomotion.net###i_frame
+lezhin.com###top-banner
+manatoki/[0-9]/.net###main-banner-view
+manatoki/[0-9]/.net###thjluipeqmdgsknrof
+manatoki/[0-9]/.net###id_mbv
+manatoki/[0-9]/.net###dgulmvfxpocetbrnwkhiqjs
+manatoki/[0-9]/.net###skhrutgjpfnioqlm
+newtoki/[0-9]/.com###main-banner-view
+newtoki/[0-9]/.com###\37 3a3309060mbb10baaaac8
