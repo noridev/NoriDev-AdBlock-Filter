@@ -1,8 +1,8 @@
 ! Title: NoriDev AdBlock Filter
 ! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.12.4
-! TimeUpdated: 2022-02-10T17:08:00+09:00
+! Version: 1.13.0
+! TimeUpdated: 2022-06-12T21:43:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter
 
@@ -89,6 +89,10 @@
 @@||dcinside.co.kr/viewmovie.php^$stealth
 @@||dcinside.co.kr/viewimage.php^$stealth
 @@||cargo.koreanair.com^$important
+@@||tivan.naver.com^$important
+@@||www.googletagmanager.com^$domain=skt0.co.kr,important
+@@||mktp.tmoney.co.kr^$app=com.samsung.android.spay,important
+@@||adcr.naver.com^$domain=search.naver.com,important
 
 
 !-------------------------------!
@@ -153,8 +157,10 @@
 ||veta.naver.com^
 ||veta.naver.com.nheos.com^
 ||wrd.naver.com^
-||lcs.naver.com^
-||wrd.naver.com^
+||adcr.naver.com^
+||adcr.naver.com.nheos.com^
+||external.impression-neo.naver.com^
+||wcs.naver.net^
 ! Web
 ||ad.nbms.naver.com^
 ||ad.news.naver.com^
@@ -223,6 +229,11 @@
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
 
+! [ Samsung ]
+! SPay
+||kr-cdn-gpp.mcsvc.samsung.com^
+||kr-api.mcsvc.samsung.com^
+
 ! [ etc ]
 ||ad.adnmore.co.kr^
 ||adapi.about.co.kr^
@@ -242,15 +253,16 @@
 ||adpopcorn.com^
 ||ad.cauly.co.kr^
 ||ablibr.com^
+||ad.naoncoms.co.kr^
+||gwk.adlibr.com^
+||gwx.adlibr.com^
+||ad-exchange.toast.com^
+||adlc-exchange.toast.com^
 
 
 !----------------------------------------!
 !----- Adblock Warning Removal List -----!
 !----------------------------------------!
-hulkpop.top##div[class^="k"]
-iphonedev.co.kr###h237
-1412.rest##.blogantiadblockbox
-1412.rest$$script[tag-content="blogantiadblock"]
 ###adblock_screen
 ###adblock_message
 ##.adblockInfo
@@ -445,6 +457,7 @@ m.naver.com###nmap_news_channel_top
 m.naver.com###_MM_WRAP_nmap_news_feed_1
 m.naver.com###_MM_WRAP_nmap_news_feed_2
 m.naver.com###_MM_WRAP_nmap_news_feed_3
+m.naver.com###HOME_AD
 m.naver.com###HOME_AD > div.nmap_wrapper
 m.naver.com###WTH_WRAP > div.cw_cnow:first-child
 m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_napp_bannernew:nth-child(4)
@@ -580,11 +593,19 @@ m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:f
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_shop_vogue > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_cui_shop_trend.MM_REFRESH_BOX.MM_HOTDEAL:nth-child(9)
 m.naver.com###mflick > div.eg-flick-container > div.flick-panel.eg-flick-panel:last-child > div.wrap.id_todo > div.grid1_wrap.brick-house:first-child > div.brick-vowel:nth-child(2) > div.grid1.id_uio_cd_fbanner:nth-child(4)
 m.naver.com###SEARCH_HOME_WRAP > div.grid1.id_cui_napp_bannernew:nth-child(3)
+m.naver.com###MM_search_container > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_comp_commemoration_banner.ISSUE-BANNER-AD
+m.naver.com###MM_search_container > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_comp_napp_banner
+m.naver.com###MM_HOME_PROMOTION
+m.naver.com###MM_HOME_PROMOTION > div.cp_content_wrap.cp_hide_tablet
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
+m.search.naver.com##.ad_light_mode
 msearch.shopping.naver.com###__next > div.style_wrap__37f4c > div.banners_banner_area__1OxCJ:nth-child(8) > div.banners_flick_area__W7IBy:nth-child(2)
 m.kin.naver.com###endContentsArea > div.sec_col1:first-child > div.banner_wrap.banner_type1:nth-child(4)
+! Cafe
+m.cafe.naver.com###ct > div.list_board:first-child > ul.noti_area
+m.cafe.naver.com###ct > div.home_section_promotion
 ! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
@@ -596,6 +617,8 @@ band.us##div:first-child > div.listKeepingRegion._mainLayoutListKeepingRegion.-s
 m.comic.naver.com###ct > div.section_list_toon:last-child > ul.list_toon:last-child > li.item.banner:nth-child(7)
 m.comic.naver.com##div.info_bottom:nth-child(6) > footer.footer:last-child > a.cont_app_banner:first-child
 m.comic.naver.com##div.info_bottom:nth-child(6) > div.desc_bottom:first-child
+! News
+n.news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION
 
 ! [ Twitter ]
 ! ads & Promoted Tweets
@@ -830,6 +853,9 @@ everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
 everytime.kr###sheet
+! QuasarZone
+quasarzone.com###container > aside.logo-area.left:first-child
+quasarzone.com###container > aside.logo-area.right:last-child
 
 ! [ Shopping ]
 ! Coupang
@@ -852,17 +878,7 @@ good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.side
 nvidia.co.kr###leftBuckets
 nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
 nvidia.co.kr###rateThisPageFooter-button
-kktoon/[0-9]/.com###banner_top_center
-kktoon/[0-9]/.com###banner_top_center
-ro-/[0-9]/.com###main-banner-view > div.col-15.col-md-9.col-sm-9 > div.row.row-15:first-child
 m.bithumb.com###appInstallInducePopup
-tokyomotion.net###active_overlay_1477648
-tokyomotion.net###i_frame
 lezhin.com###top-banner
-manatoki/[0-9]/.net###main-banner-view
-manatoki/[0-9]/.net###thjluipeqmdgsknrof
-manatoki/[0-9]/.net###id_mbv
-manatoki/[0-9]/.net###dgulmvfxpocetbrnwkhiqjs
-manatoki/[0-9]/.net###skhrutgjpfnioqlm
-newtoki/[0-9]/.com###main-banner-view
-newtoki/[0-9]/.com###\37 3a3309060mbb10baaaac8
+mbti-animal.netlify.app##a.mt-5.banner
+pushoong.com###ask_bottom_banner

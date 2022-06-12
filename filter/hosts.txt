@@ -1,24 +1,33 @@
-! Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다.
-! Title: NoriDev AdAway DNS Filter - Beta
-! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다.
-! Author: NoriDev
-! Version: 1.9.0b2
-! TimeUpdated: 2021-01-22T22:46:00+09:00
-! Expires: 1 days (update frequency)
-! Homepage: https://github.com/NoriDev/NoriDev-AdGuard-DNS-Filter/tree/beta
+# Title: NoriDev AdAway DNS Filter
+# Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
+# Author: NoriDev
+# Version: 1.13.0
+# TimeUpdated: 2022-06-12T21:39:00+09:00
+# Expires: 1 days (update frequency)
+# Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter
+
+127.0.0.1  localhost
+::1  localhost
 
 
-! ------------------------------
-! ----- Twitter Faster DNS -----
-! ------------------------------
-104.76.97.12 pbs.twimg.com
-104.76.97.13 video.twimg.com
+# ------------------------------ #
+# ----- Twitter Faster DNS ----- #
+# ------------------------------ #
+# 104.76.97.12 pbs.twimg.com
+# 104.76.97.13 video.twimg.com
 
 
-! ---------------
-! ----- ads -----
-! ---------------
-! [ Kakao ]
+# ------------------------------- #
+# ----- Tracking Protection ----- #
+# ------------------------------- #
+127.0.0.1 analytics.ad.daum.net
+127.0.0.1 analytics.twitter.com
+
+
+# --------------- #
+# ----- ads ----- #
+# --------------- #
+# [ Kakao ]
 127.0.0.1 ad-content.moment.kakao.com
 127.0.0.1 kyson.ad.daum.net
 127.0.0.1 display.ad.daum.net
@@ -35,7 +44,7 @@
 127.0.0.1 aem-collector.daumkakao.io
 127.0.0.1 aem-collector-prod-ytlsojie.kgslb.com
 
-! [ Google ]
+# [ Google ]
 127.0.0.1 pagead2.googlesyndication.com
 127.0.0.1 partner.googleadservices.com
 127.0.0.1 adservice.google.co.kr
@@ -49,14 +58,14 @@
 127.0.0.1 partnerssl.googleadservices.com
 127.0.0.1 googletagmanager.com
 
-! [ Twitter ]
+# [ Twitter ]
 127.0.0.1 ads-twitter.com
 127.0.0.1 ads-api.twitter.com
 127.0.0.1 ads-api-sandbox.twitter.com
 127.0.0.1 ads-bidder-api.twitter.com
 
-! [ Naver ]
-! Common
+# [ Naver ]
+# Common
 127.0.0.1 adc.naver.com
 127.0.0.1 adcreative.naver.com
 127.0.0.1 bb.ad.naver.com
@@ -68,9 +77,11 @@
 127.0.0.1 veta.naver.com
 127.0.0.1 veta.naver.com.nheos.com
 127.0.0.1 wrd.naver.com
-127.0.0.1 lcs.naver.com
-127.0.0.1 wrd.naver.com
-! Web
+127.0.0.1 adcr.naver.com
+127.0.0.1 adcr.naver.com.nheos.com
+127.0.0.1 external.impression-neo.naver.com
+127.0.0.1 wcs.naver.net
+# Web
 127.0.0.1 ad.nbms.naver.com
 127.0.0.1 ad.news.naver.com
 127.0.0.1 creative.nbms.naver.com
@@ -78,12 +89,12 @@
 127.0.0.1 tvetamovie.pstatic.net
 127.0.0.1 tvetamovie.pstatic.net.dn.gscdn.net
 127.0.0.1 searchad-phinf.pstatic.net
-! Cafe
+# Cafe
 127.0.0.1 golda.cafe.naver.com
-! Band
+# Band
 127.0.0.1 naverpa-phinf.pstatic.net
 127.0.0.1 ad-api.band.us
-! TV
+# TV
 127.0.0.1 ad.nmv.naver.com
 127.0.0.1 ams.rmcnmv.naver.com
 127.0.0.1 cpv.ad.naver.com
@@ -91,26 +102,34 @@
 127.0.0.1 videost.nmv.naver.com
 127.0.0.1 vts.rmcnmv.naver.com
 127.0.0.1 lcs.naver.com
-! Webtoon
+# Webtoon
 127.0.0.1 ads.moot.us
 127.0.0.1 ads.moot.us.nheos.com
 127.0.0.1 naverwebtoon-phinf.pstatic.net
 127.0.0.1 naverwebtoon-phinf.pstatic.net.static.gscdn.net
 
-! [ pixiv ]
+# [ pixiv ]
 127.0.0.1 ad2.fivecdm.com
 127.0.0.1 bc2.fivecdm.com
 127.0.0.1 pixon.ads-pixiv.net
 127.0.0.1 imp.pixiv.net
 
-! [ Community ]
-! Clien
-127.0.0.1 m.clien.net/service/api/naverAd$domain=m.clien.net
-! EveryTime
+# [ namuwiki ]
+127.0.0.1 ng.namupage.com
+
+# [ Community ]
+# dcinside
+127.0.0.1 addc.dcinside.com
+# EveryTime
 127.0.0.1 ad.everytime.kr
 127.0.0.1 cf-eba.everytime.kr
 
-! [ etc ]
+# [ Samsung ]
+# SPay
+127.0.0.1 kr-cdn-gpp.mcsvc.samsung.com
+127.0.0.1 kr-api.mcsvc.samsung.com
+
+# [ etc ]
 127.0.0.1 ad.adnmore.co.kr
 127.0.0.1 adapi.about.co.kr
 127.0.0.1 advimg.ad-mapps.com
@@ -128,3 +147,9 @@
 127.0.0.1 ad.danawa.com
 127.0.0.1 adpopcorn.com
 127.0.0.1 ad.cauly.co.kr
+127.0.0.1 ablibr.com
+127.0.0.1 ad.naoncoms.co.kr
+127.0.0.1 gwk.adlibr.com
+127.0.0.1 gwx.adlibr.com
+127.0.0.1 ad-exchange.toast.com
+127.0.0.1 adlc-exchange.toast.com
