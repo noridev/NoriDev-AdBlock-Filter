@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.13.0b11
-! TimeUpdated: 2022-06-12T21:43:00+09:00
+! Version: 1.13.1b1
+! TimeUpdated: 2022-06-15T09:57:06+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -790,7 +790,6 @@ m.clien.net##div.list_bottom_ad
 ! dcinside
 game.dcinside.com###comment_li_0
 dcinside.com###ad-layer
-m.dcinside.com##li[class="comment"]:not(div#comment)
 dcinside.com##li[id="comment_li_0"][class="ub-content dory"]
 dcid.dcinside.com##div.ban_box
 dcinside.com##div#dgn_content_de>div[style="padding-top: 16px;padding-bottom:30px;text-align: center"]
@@ -813,6 +812,7 @@ gall.dcinside.com##div.stickyunit
 gall.dcinside.com##form#write > div[style="height:90px;"]
 gall.dcinside.com##ul.cmt_list>li.dory.ub-content
 gall.dcinside.com##ul.reply_list>li.dory.ub-content
+m.dcinside.com##li[class="comment"]:not(div#comment)
 m.dcinside.com##div#adbay_floatingid
 m.dcinside.com##div.adv-group
 m.dcinside.com##div.adv-groupin
@@ -841,13 +841,14 @@ gall.dcinside.com##.power_click
 ! Fmkorea
 fmkorea.com##div#adpost
 fmkorea.com##div#banner3
+fmkorea.com###adpost
 fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
 fmkorea.com##iframe[src^="//www.fmkorea.com/_loader/loader.php"]
 fmkorea.com##iframe[src^="/_adpage/"]
 m.fmkorea.com##div.adpost
 m.fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
 m.fmkorea.com##iframe[src^="/_adpage/"]
-fmkorea.com###adpost
+m.fmkorea.com##div[class^="fm_google_a read"]
 ! EvetyTime
 everytime.kr###container > div.banners:nth-child(2)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
