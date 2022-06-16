@@ -3,7 +3,7 @@
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
 ! Version: 1.13.1b1
-! TimeUpdated: 2022-06-15T09:57:06+09:00
+! TimeUpdated: 2022-06-16T16:22:50+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -79,21 +79,6 @@
 !------------------------------!
 ! 104.76.97.12 pbs.twimg.com
 ! 104.76.97.13 video.twimg.com
-
-
-!---------------------------!
-!----- Allowed Domains -----!
-!---------------------------!
-@@||res-creatives.maio.jp$important
-@@||media-api.maio.jp$important
-@@||ssl.pstatic.net/adimg3.search/adpost/js/adpost_show_ads_v2.min.js$script,domain=search.danawa.com|m.danawa.com|m.clien.net
-@@||dcinside.co.kr/viewmovie.php^$stealth
-@@||dcinside.co.kr/viewimage.php^$stealth
-@@||cargo.koreanair.com^$important
-@@||tivan.naver.com^$important
-@@||www.googletagmanager.com^$domain=skt0.co.kr,important
-@@||mktp.tmoney.co.kr^$app=com.samsung.android.spay,important
-@@||adcr.naver.com^$domain=search.naver.com,important
 
 
 !-------------------------------!
@@ -884,3 +869,18 @@ m.bithumb.com###appInstallInducePopup
 lezhin.com###top-banner
 mbti-animal.netlify.app##a.mt-5.banner
 pushoong.com###ask_bottom_banner
+
+
+!---------------------------!
+!----- Allowed Domains -----!
+!---------------------------!
+@@||res-creatives.maio.jp$important
+@@||media-api.maio.jp$important
+@@||ssl.pstatic.net/adimg3.search/adpost/js/adpost_show_ads_v2.min.js$script,domain=search.danawa.com|m.danawa.com|m.clien.net
+@@||dcinside.co.kr/viewmovie.php^$stealth
+@@||dcinside.co.kr/viewimage.php^$stealth
+@@||cargo.koreanair.com^$important
+@@||tivan.naver.com^$important
+@@||googletagmanager.com^$domain=skt0.co.kr,important
+@@||mktp.tmoney.co.kr^$app=com.samsung.android.spay,important
+@@||adcr.naver.com^$domain=search.naver.com,important
