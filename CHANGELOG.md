@@ -10,6 +10,8 @@
 ## 1.x.x (unreleased)
 ### Improvements
 - 에펨코리아 모바일 웹에서 본문 내 광고 블럭이 사라지지 않는 문제
+### Bugfixes
+- 도메인별 필터링 규칙이 작동하지 않는 문제
 
 ## 1.13.0
 ### Improvements
