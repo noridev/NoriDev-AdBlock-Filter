@@ -161,4 +161,4 @@
 127.0.0.1 gwx.adlibr.com
 127.0.0.1 ad-exchange.toast.com
 127.0.0.1 adlc-exchange.toast.com
-127.0.0.1 www.ad.appyoun.com$important
+127.0.0.1 www.ad.appyoun.com
