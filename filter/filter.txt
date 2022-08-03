@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.13.1b12
-! TimeUpdated: 2022-08-03T20:35:00+09:00
+! Version: 1.13.1b13
+! TimeUpdated: 2022-08-03T20:40:00+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -892,6 +892,7 @@ lezhin.com###top-banner
 mbti-animal.netlify.app##a.mt-5.banner
 pushoong.com###ask_bottom_banner
 funshop.co.kr##div.wing-banner
+netmanias.com##div.clo_header:first-child > div.dwp_header > div.dlo_logo:last-child > div.dlg_serch:last-child > div:first-child
 
 
 !---------------------------!
