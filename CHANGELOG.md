@@ -21,6 +21,9 @@
 - 트위치 P2P 차단
 - svrforum 스티커 광고
 - Netmanias 배너 광고
+- Blocked Domains 추가
+- censys.io 스캐너
+- mailscanner.info 스캐너
 ### Bugfixes
 - 도메인별 필터링 규칙이 작동하지 않는 문제
 - 0한동 서비스 접속이 불안정한 문제
