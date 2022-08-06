@@ -1,10 +1,10 @@
 ! Title: NoriDev AdBlock Filter
-! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
+! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.13.0
-! TimeUpdated: 2022-06-12T21:43:00+09:00
+! Version: 1.14.0
+! TimeUpdated: 2022-08-06T19:34:00+09:00
 ! Expires: 1 days (update frequency)
-! Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter
+! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter
 
 !--------------------------!
 !----- General JS API -----!
@@ -80,6 +80,24 @@
 ! 104.76.97.13 video.twimg.com
 
 
+!----------------------------!
+!----- Twitch P2P Block -----!
+!----------------------------!
+||backend.dna-delivery.com$all,domain=twitch.tv
+||static.twitchcdn.net/assets/streamroot.streamrooter-*.js$script,domain=www.twitch.tv
+twitch.tv#%#//scriptlet("nowebrtc")
+twitch.tv##+js(nowebrtc)
+
+
+!-------------------------------!
+!----- Tracking Protection -----!
+!-------------------------------!
+||analytics.ad.daum.net^
+||analytics.twitter.com^$third-party
+||cdn.api.twitter.com/*/urls/count.json$third-party
+||twitter.com/i/jot
+
+
 !---------------------------!
 !----- Allowed Domains -----!
 !---------------------------!
@@ -90,18 +108,36 @@
 @@||dcinside.co.kr/viewimage.php^$stealth
 @@||cargo.koreanair.com^$important
 @@||tivan.naver.com^$important
-@@||www.googletagmanager.com^$domain=skt0.co.kr,important
-@@||mktp.tmoney.co.kr^$app=com.samsung.android.spay,important
-@@||adcr.naver.com^$domain=search.naver.com,important
+@@||www.googletagmanager.com^$important,domain=skt0.co.kr
+@@||www-googletagmanager.l.google.com^$important,domain=skt0.co.kr
+@@||mktp.tmoney.co.kr^$important,app=com.samsung.android.spay
+@@||adcr.naver.com^$important,domain=search.naver.com
+@@||mobile.launchdarkly.com^$important,app=com.samsung.android.oneconnect
+@@||ap.www.namecheap.com^$important,document
 
 
-!-------------------------------!
-!----- Tracking Protection -----!
-!-------------------------------!
-||analytics.ad.daum.net^
-||analytics.twitter.com^$third-party
-||cdn.api.twitter.com/*/urls/count.json$third-party
-||twitter.com/i/jot
+!---------------------------!
+!----- Blocked Domains -----!
+!---------------------------!
+! [ censys.io / censys-scanner.com ]
+/scanner-([0-9]+).ch([0-9]).censys-scanner.com/$important
+! 162.142.125.0/24
+/(162\.142\.125\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+! 167.94.138.0/24
+/(167\.94\.138\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+! 167.94.145.0/24
+/(167\.94\.145\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+! 167.94.146.0/24
+/(167\.94\.146\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+! 167.248.133.0/24
+/(167\.248\.133\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+! 2602:80d:1000:b0cc:e::/80
+/\[(2602\:080d\:1000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$important,network
+! 2620:96:e000:b0cc:e::/80
+/\[(2620\:0096\:e000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$important,network
+
+! [ mailscanner.info ]
+||phishing.mailscanner.info^$important
 
 
 !---------------!
@@ -137,12 +173,7 @@
 ||googletagservices.com^
 ||partnerssl.googleadservices.com^
 ||googletagmanager.com^
-
-! [ Twitter ]
-||ads-twitter.com^
-||ads-api.twitter.com^
-||ads-api-sandbox.twitter.com^
-||ads-bidder-api.twitter.com^
+||www-googletagmanager.l.google.com^
 
 ! [ Naver ]
 ! Common
@@ -206,10 +237,22 @@
 ||nanumnews.com/news_skin/nanumnews_com/main/nanum_ad_*.html^
 ||ng.namupage.com^
 
-! [ Community ]
-! Clien
+! [ Samsung ]
+! SPay
+||kr-cdn-gpp.mcsvc.samsung.com^
+||kr-api.mcsvc.samsung.com^
+
+! --- Community --- !
+! [ Twitter ]
+||ads-twitter.com^
+||ads-api.twitter.com^
+||ads-api-sandbox.twitter.com^
+||ads-bidder-api.twitter.com^
+
+! [ Clien ]
 ||m.clien.net/service/api/naverAd^$domain=m.clien.net
-! dcinside
+
+! [ dcinside ]
 ||addc.dcinside.com^
 ||app.dcinside.com/api/_ad_search_link*.php^
 ||gall.dcinside.com/_js/ad.js^
@@ -220,21 +263,18 @@
 ||wiki.dcinside.com/main_top_realclick_banner.php^$domain=wiki.dcinside.com
 ||wstatic.dcinside.com/ad/
 ||wstatic.dcinside.com/gallery/top/ad_top/
-! Fmkorea
+
+! [ Fmkorea ]
 ||fmkorea.com/_adpage/$domain=fmkorea.com
 ||fmkorea.com/_loader/loader.php^$domain=fmkorea.com
 ||loader.fmkorea.com/_loader/loader.php^$domain=fmkorea.com|m.fmkorea.com
 ||m.fmkorea.com/_adpage/$domain=m.fmkorea.com
-! EveryTime
+
+! [ EveryTime ]
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
 
-! [ Samsung ]
-! SPay
-||kr-cdn-gpp.mcsvc.samsung.com^
-||kr-api.mcsvc.samsung.com^
-
-! [ etc ]
+! --- etc --- !
 ||ad.adnmore.co.kr^
 ||adapi.about.co.kr^
 ||advimg.ad-mapps.com^
@@ -258,6 +298,7 @@
 ||gwx.adlibr.com^
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
+||www.ad.appyoun.com^$important
 
 
 !----------------------------------------!
@@ -606,6 +647,7 @@ m.kin.naver.com###endContentsArea > div.sec_col1:first-child > div.banner_wrap.b
 ! Cafe
 m.cafe.naver.com###ct > div.list_board:first-child > ul.noti_area
 m.cafe.naver.com###ct > div.home_section_promotion
+m.cafe.naver.com###app > div > div.WebArticle.os_ios > div.CafeAppBanner
 ! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda
@@ -618,41 +660,8 @@ m.comic.naver.com###ct > div.section_list_toon:last-child > ul.list_toon:last-ch
 m.comic.naver.com##div.info_bottom:nth-child(6) > footer.footer:last-child > a.cont_app_banner:first-child
 m.comic.naver.com##div.info_bottom:nth-child(6) > div.desc_bottom:first-child
 ! News
+news.naver.com##div.comp_news_ad
 n.news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION
-
-! [ Twitter ]
-! ads & Promoted Tweets
-##.twitter-ad
-twitter.com,wral.com##.promotion
-twitter.com##.suggested-tweet-stream-container
-twitter.com##div.promoted-tweet
-twitter.com##li.has-profile-promoted-tweet
-twitter.com##.has-profile-promoted-tweet
-twitter.com##.is-promoted
-twitter.com##.promoted-account
-twitter.com##.promoted-trend
-twitter.com##.promoted-tweet[data-disclosure-type="issue"]
-twitter.com##.promoted-tweet[data-disclosure-type="political"]
-twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
-twitter.com##.stream-item-group-start[label="promoted"]
-twitter.com##.stream-item[data-item-type="tweet"][data-item-id*=":"]
-twitter.com##.stream-tweet[label="promoted"]
-twitter.com##a[href*="src=promoted_trend_click"]
-twitter.com##a[href*="src=promoted_trend_click"] + div
-twitter.com#%#!function(){(new MutationObserver(function(){document.querySelectorAll('div[class] > div[style^="position: relative"] > div[style*="position: absolute;"]:not([class]):not([style*="display: none"]').forEach(function(b){Object.keys(b).some(function(a){if(a.includes("reactEventHandlers")){a=b[a];try{var c=a.children._owner.memoizedProps.item.id;c.includes("promotedTweet")&&(b.style="display:none!important;")}catch(d){}}})})})).observe(document,{childList:!0,subtree:!0})}();
-twitter.com#?#div[data-testid="UserCell"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
-twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|推薦|推荐|프로모션 중|プロモーション/))
-twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|sponsorluğunda|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
-twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Tweet|推廣推文|推广推文|프로모션 트윗|プロモツイート/)
-mobile.twitter.com#?#.tweet:-abp-has(.promo)
-mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
-mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
-! Trends for you & Who to follow 
-! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
-! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
-! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
-! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
-! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
 
 ! [ pixiv ]
 pixiv.net###root > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:last-child
@@ -745,6 +754,11 @@ pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^=
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"] > div[class^="sc-"]:first-child > aside[class^="sc-"]:last-child > div[class^="sc-"]:nth-child(4)
 pixiv.net###root > div:last-child > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:nth-child(4)
 
+! [ Pawoo ]
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:first-child > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(3) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
+pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(4) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
+
 ! [ namuwiki ]
 namu.wiki##div.ad
 namu.wiki##iframe[src*="//arca.live/static/ad/"]
@@ -757,9 +771,42 @@ namu.wiki#?#div:matches-attr("/data-v-/"):has(> div > div > div > div:matches-at
 namu.wiki#?#div[class]:matches-attr("/data-v-/") > div:matches-attr("/data-v-/"):not([class]):not(:has(> a[href^="/w/"]:matches-attr("/data-v-/"))):not(:has(> a:matches-attr("/data-v-/"))):not(:contains(/.{1,}/i))
 namu.wiki##article > h1 + p ~ div[id][class]
 
+! --- Community --- !
+! [ Twitter ]
+! ads & Promoted Tweets !
+##.twitter-ad
+twitter.com,wral.com##.promotion
+twitter.com##.suggested-tweet-stream-container
+twitter.com##div.promoted-tweet
+twitter.com##li.has-profile-promoted-tweet
+twitter.com##.has-profile-promoted-tweet
+twitter.com##.is-promoted
+twitter.com##.promoted-account
+twitter.com##.promoted-trend
+twitter.com##.promoted-tweet[data-disclosure-type="issue"]
+twitter.com##.promoted-tweet[data-disclosure-type="political"]
+twitter.com##.promoted-tweet[data-disclosure-type="promoted"]
+twitter.com##.stream-item-group-start[label="promoted"]
+twitter.com##.stream-item[data-item-type="tweet"][data-item-id*=":"]
+twitter.com##.stream-tweet[label="promoted"]
+twitter.com##a[href*="src=promoted_trend_click"]
+twitter.com##a[href*="src=promoted_trend_click"] + div
+twitter.com#%#!function(){(new MutationObserver(function(){document.querySelectorAll('div[class] > div[style^="position: relative"] > div[style*="position: absolute;"]:not([class]):not([style*="display: none"]').forEach(function(b){Object.keys(b).some(function(a){if(a.includes("reactEventHandlers")){a=b[a];try{var c=a.children._owner.memoizedProps.item.id;c.includes("promotedTweet")&&(b.style="display:none!important;")}catch(d){}}})})})).observe(document,{childList:!0,subtree:!0})}();
+twitter.com#?#div[data-testid="UserCell"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
+twitter.com#?#div[data-testid="placementTracking"]:-abp-has(svg + div[dir="auto"] > span:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|Sponsorlu|Mainostettu|推廣|推广|推薦|推荐|프로모션 중|プロモーション/))
+twitter.com#?#div[data-testid="trend"]:-abp-contains(/Promoted|Gesponsert|Promocionado|Sponsorisé|Sponsorizzato|Promowane|Promovido|Реклама|Uitgelicht|sponsorluğunda|Mainostettu|推廣|推广|프로모션 중|プロモーション/)
+twitter.com#?#h2[role="heading"]:-abp-contains(/Promoted Tweet|Gesponserter Tweet|推廣推文|推广推文|프로모션 트윗|プロモツイート/)
+mobile.twitter.com#?#.tweet:-abp-has(.promo)
+mobile.twitter.com#?#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
+mobile.twitter.com#?#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
+! Trends for you & Who to follow !
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-16y2uox > div[class^="css-1dbjc4n"] > div.css-1dbjc4n.r-aqfbo4.r-zso239.r-1hycxz:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3) > div[class^="css-1dbjc4n"]
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(4)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(3)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:nth-child(5)
+! twitter.com###react-root > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > main[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:first-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > section[class^="css-1dbjc4n"] > div[class^="css-1dbjc4n"]:last-child > div > div > div:nth-child(8)
 
-! [ Community ]
-! Clien
+! [ Clien ]
 ##iframe[src*="//server.cpmstar.com/cached/client/"][src*="/carouselv1.html"]
 clien.net##div#hongboInfoList
 clien.net##div#naverAd
@@ -786,16 +833,15 @@ m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_top_ad
 m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_center_ad
 m.clien.net##div.nav_container:nth-child(8) > div.content_main > div.main_section_contents:nth-child(6) > div.main-swiper:first-child > div.shop_naver:nth-child(3)
 m.clien.net##div.list_bottom_ad
-! dcinside
-game.dcinside.com###comment_li_0
+
+! [ dcinside ]
 dcinside.com###ad-layer
-m.dcinside.com##li[class="comment"]:not(div#comment)
 dcinside.com##li[id="comment_li_0"][class="ub-content dory"]
 dcid.dcinside.com##div.ban_box
 dcinside.com##div#dgn_content_de>div[style="padding-top: 16px;padding-bottom:30px;text-align: center"]
 dcinside.com##div.ad_top
-dcinside.com##div[class^="leftbanner"]
-dcinside.com##div[class^="rightbanner"]
+dcinside.com##div.leftbanner
+dcinside.com##div.rightbanner
 dcinside.com##ul.gnb_list > li.linebox
 dcinside.com##ul.gnb_list > li:nth-child(8)
 dcinside.com##div.evt_content
@@ -812,6 +858,7 @@ gall.dcinside.com##div.stickyunit
 gall.dcinside.com##form#write > div[style="height:90px;"]
 gall.dcinside.com##ul.cmt_list>li.dory.ub-content
 gall.dcinside.com##ul.reply_list>li.dory.ub-content
+m.dcinside.com##li[class="comment"]:not(div#comment)
 m.dcinside.com##div#adbay_floatingid
 m.dcinside.com##div.adv-group
 m.dcinside.com##div.adv-groupin
@@ -837,43 +884,49 @@ dcinside.com##.banner_box
 gall.dcinside.com###admaru
 gall.dcinside.com##._BTN_AD_
 gall.dcinside.com##.power_click
-! Fmkorea
+game.dcinside.com###comment_li_0
+
+! [ Fmkorea ]
 fmkorea.com##div#adpost
 fmkorea.com##div#banner3
+fmkorea.com###adpost
 fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
 fmkorea.com##iframe[src^="//www.fmkorea.com/_loader/loader.php"]
 fmkorea.com##iframe[src^="/_adpage/"]
 m.fmkorea.com##div.adpost
 m.fmkorea.com##iframe[src^="//loader.fmkorea.com/_loader/loader.php"]
 m.fmkorea.com##iframe[src^="/_adpage/"]
-fmkorea.com###adpost
-! EvetyTime
+m.fmkorea.com##div[class^="fm_google_a read"]
+
+! [ EveryTime ]
 everytime.kr###container > div.banners:nth-child(2)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(3)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:nth-child(4)
 everytime.kr###container > div.leftside:nth-child(3) > div.card:last-child
 everytime.kr###sheet
-! QuasarZone
+
+! [ QuasarZone ]
 quasarzone.com###container > aside.logo-area.left:first-child
 quasarzone.com###container > aside.logo-area.right:last-child
 
-! [ Shopping ]
-! Coupang
+! [ svrforum ]
+svrforum.com###xt_sticker_wrap
+
+! --- Shopping --- !
+! [ Coupang ]
 coupang.com###coupang-banner
 coupang.com###searchOptionForm > div.search-wrapper:last-child > div.search-content.search-content-with-feedback:nth-child(2) > div.srp-top-banner-container:nth-child(3)
-! Gmarket
+
+! [ Gmarket ]
 mobile.gmarket.co.kr###srpSponsorLinkList
-! Auction
+
+! [ Auction ]
 browse.auction.co.kr###section--inner_content_body_container > div.section--module_wrap:last-child > div.component.component--sponsor_link
-! emart
+
+! [ emart ]
 emart.ssg.com###sky_banner_tab
 
-! [ Pawoo ]
-pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:first-child > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
-pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(3) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
-pawoo.net###mastodon > div > div.ui > div.columns-area__panels:first-child > div.columns-area__panels__main:nth-child(2) > div:last-child > div.react-swipeable-view-container > div:nth-child(4) > div.columns-area.columns-area--mobile > div.column > div.pawoo-kyoa-home:last-child
-
-! [ etc ]
+! --- etc --- !
 good-postit.biz###main > div.container_wrap.container_wrap_first.main_color.sidebar_right:first-child > div.container.template-blog.template-single-blog > main.content.units.av-content-small.alpha.av-blog-meta-author-disabled.av-blog-meta-comments-disabled.av-blog-meta-html-info-disabled:first-child > div.code-block.code-block-7:nth-child(2) > div
 nvidia.co.kr###leftBuckets
 nvidia.co.kr###Form1 > table:last-child > tbody > tr > td > div:nth-child(9)
@@ -882,3 +935,5 @@ m.bithumb.com###appInstallInducePopup
 lezhin.com###top-banner
 mbti-animal.netlify.app##a.mt-5.banner
 pushoong.com###ask_bottom_banner
+funshop.co.kr##div.wing-banner
+netmanias.com##div.clo_header:first-child > div.dwp_header > div.dlo_logo:last-child > div.dlg_serch:last-child > div:first-child
