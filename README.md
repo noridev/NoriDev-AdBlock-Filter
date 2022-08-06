@@ -47,7 +47,7 @@
 #### 필터 URL
 <pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/filter.txt</pre>
 
-### AdGuard ([필터 구독](https://adblock.noridev.moe/redirect/adguard.html))
+### AdGuard ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 <details markdown="1">
 <summary>직접 추가하기</summary>
 
@@ -85,10 +85,10 @@
 
 </details>
 
-### AdBlock Plus ([필터 구독](https://adblock.noridev.moe/redirect/adblock_plus.html))
+### AdBlock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 AdBlock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
-### uBlock Origin ([필터 구독](https://adblock.noridev.moe/redirect/ublock_origin.html))
+### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
 ### AdAway
