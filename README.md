@@ -51,7 +51,7 @@ Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 �
 #### 필터 URL
 <pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt</pre>
 
-### AdGuard ([필터 구독](adguard:subscribe?location=https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt&title=NoriDev%20AdBlock%20Filter%20-%20Beta))
+### AdGuard ([필터 구독](https://adblock.noridev.moe/redirect/beta/adguard.html))
 <details markdown="1">
 <summary>직접 추가하기</summary>
 
@@ -89,10 +89,10 @@ Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 �
 
 </details>
 
-### AdBlock Plus ([필터 구독](abp:subscribe?location=https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt&title=NoriDev%20AdBlock%20Filter%20-%20Beta))
+### AdBlock Plus ([필터 구독](https://adblock.noridev.moe/redirect/beta/adblock_plus.html))
 AdBlock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
-### uBlock Origin ([필터 구독](extension://odfafepnkmbhccpbejgmiehpchacaeak/asset-viewer.html?url=https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt&title=NoriDev%20AdBlock%20Filter%20-%20Beta&subscribe=1))
+### uBlock Origin ([필터 구독](https://adblock.noridev.moe/redirect/beta/ublock_origin.html))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
 ### AdAway
