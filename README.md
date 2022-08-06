@@ -14,7 +14,7 @@
 - **AdGuard for iOS**
 - **AdGuard Pro for iOS**
 - **AdGuard Home**
-- **AdBlock Plus**
+- **Adblock Plus**
 - **uBlock Origin**
 - **AdAway**
 
@@ -74,7 +74,7 @@
 6. **사용자 정의 필터 추가**를 클릭합니다.
 7. **URL 또는 경로**에 상단의 URL을 붙여넣고 **다음**을 클릭한 뒤 **신뢰할 수 있는 필터**에 체크하고 **추가**를 누릅니다.
 
-#### iOS
+#### iOS / iPadOS
 1. **보호**를 클릭합니다. (하단 4개의 탭 중 방패 모양으로 된 아이콘)
 2. **Safari 보호**를 클릭합니다.
 3. 스위치를 **켭니다**.
@@ -85,7 +85,7 @@
 
 </details>
 
-### AdBlock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
+### Adblock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 AdBlock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
 ### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
@@ -130,7 +130,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 5. **새 DNS 필터**를 클릭합니다.
 6. **URL 또는 경로**에 상단의 URL을 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdBlock Filter**를 입력하고 **추가**를 누릅니다.
 
-#### iOS
+#### iOS / iPadOS
 ##### 개발자 모드 활성화
 1. **설정**에 진입합니다.
 2. **일반**을 클릭합니다.
