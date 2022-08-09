@@ -10,6 +10,9 @@
 ## 1.x.x (unreleased)
 ### Features
 - 다나와 광고
+### Changes
+- 확장 필터를 GitHub로 이전
+- 확장 필터에서 일부 목록을 옮김
 ### Bugfixes
 - 일부 도메인에 important 옵션이 잘못 설정된 문제
 
