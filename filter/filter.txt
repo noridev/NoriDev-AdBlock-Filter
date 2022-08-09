@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.14.0-rc
-! TimeUpdated: 2022-08-06T19:34:00+09:00
+! Version: 1.14.1b1
+! TimeUpdated: 2022-08-09T17:09:43+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -121,24 +121,24 @@ twitch.tv##+js(nowebrtc)
 !----- Blocked Domains -----!
 !---------------------------!
 ! [ censys.io / censys-scanner.com ]
-/scanner-([0-9]+).ch([0-9]).censys-scanner.com/$important
+/scanner-([0-9]+).ch([0-9]+).censys-scanner.com/
 ! 162.142.125.0/24
-/(162\.142\.125\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+/(162\.142\.125\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$network
 ! 167.94.138.0/24
-/(167\.94\.138\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+/(167\.94\.138\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$network
 ! 167.94.145.0/24
-/(167\.94\.145\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+/(167\.94\.145\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$network
 ! 167.94.146.0/24
-/(167\.94\.146\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+/(167\.94\.146\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$network
 ! 167.248.133.0/24
-/(167\.248\.133\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$important,network
+/(167\.248\.133\.(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5]))/$network
 ! 2602:80d:1000:b0cc:e::/80
-/\[(2602\:080d\:1000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$important,network
+/\[(2602\:080d\:1000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$network
 ! 2620:96:e000:b0cc:e::/80
-/\[(2620\:0096\:e000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$important,network
+/\[(2620\:0096\:e000\:b0cc\:000e\:[a-f0-9]{4}\:[a-f0-9]{4}\:[a-f0-9]{4})\]/$network
 
 ! [ mailscanner.info ]
-||phishing.mailscanner.info^$important
+||phishing.mailscanner.info^
 
 
 !---------------!
@@ -238,6 +238,10 @@ twitch.tv##+js(nowebrtc)
 ||nanumnews.com/news_skin/nanumnews_com/main/nanum_ad_*.html^
 ||ng.namupage.com^
 
+! [ danawa ]
+||ad.danawa.com^
+||static.danawa.com/globaljs/static/adweb_counter_danawa.min.js
+
 ! [ Samsung ]
 ! SPay
 ||kr-cdn-gpp.mcsvc.samsung.com^
@@ -290,7 +294,6 @@ twitch.tv##+js(nowebrtc)
 ||click.clickmon.co.kr^
 ||*.clickmon.co.kr^
 ||g-plug.pstatic.net^
-||ad.danawa.com^
 ||adpopcorn.com^
 ||ad.cauly.co.kr^
 ||ablibr.com^
@@ -299,7 +302,7 @@ twitch.tv##+js(nowebrtc)
 ||gwx.adlibr.com^
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
-||www.ad.appyoun.com^$important
+||www.ad.appyoun.com^
 
 
 !----------------------------------------!
@@ -771,6 +774,21 @@ namu.wiki#?#article > div:matches-attr("/data-v-/"):has(> div:matches-attr("/dat
 namu.wiki#?#div:matches-attr("/data-v-/"):has(> div > div > div > div:matches-attr("/data-v-/"):matches-css(justify-content: space-between) > img[src*="/w.namu.la/s/"]:nth-ancestor(4))
 namu.wiki#?#div[class]:matches-attr("/data-v-/") > div:matches-attr("/data-v-/"):not([class]):not(:has(> a[href^="/w/"]:matches-attr("/data-v-/"))):not(:has(> a:matches-attr("/data-v-/"))):not(:contains(/.{1,}/i))
 namu.wiki##article > h1 + p ~ div[id][class]
+
+! [ danawa ]
+danawa.com###main-middlebnr
+danawa.com###main-rightbnr
+danawa.com##div.main-clip.main__inner
+danawa.com##div.main-footer__right
+danawa.com##div.main__grid__right
+prod.danawa.com###mainAdStar
+prod.danawa.com###mainAdReader
+prod.danawa.com###mainAdPoint
+prod.danawa.com###floatAdLayer
+prod.danawa.com###powerLink_new_product
+prod.danawa.com###adTypeE_Original
+prod.danawa.com##li.prod_ad_item
+prod.danawa.com##div.ad_wide_slide
 
 ! --- Community --- !
 ! [ Twitter ]

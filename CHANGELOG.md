@@ -7,13 +7,15 @@
 
 -->
 
+## 1.x.x (unreleased)
+### Features
+- 다나와 광고
+### Bugfixes
+- 일부 도메인에 important 옵션이 잘못 설정된 문제
+
 ## 1.4.0 (2022/08/06)
 ### Improvements
-- 에펨코리아 모바일 웹에서 본문 내 광고 블럭이 사라지지 않는 문제
 - 일부 광고 차단 방식 변경
-- 삼성 스마트싱스(SmartThings)에서 데이터를 불러올 수 없던 문제
-- Namecheap에서 설정 적용 버튼이 사라지는 문제
-- 광고 도메인 및 요소 정렬 변경
 ### Features
 - 네이버 카페 광고
 - 네이버 뉴스 광고
@@ -24,9 +26,14 @@
 - Blocked Domains 추가
 - censys.io 스캐너
 - mailscanner.info 스캐너
+### Changes
+- 광고 도메인 및 요소 정렬 변경
 ### Bugfixes
 - 도메인별 필터링 규칙이 작동하지 않는 문제
 - 0한동 서비스 접속이 불안정한 문제
+- Namecheap에서 설정 적용 버튼이 사라지는 문제
+- 에펨코리아 모바일 웹에서 본문 내 광고 블럭이 사라지지 않는 문제
+- 삼성 스마트싱스(SmartThings)에서 데이터를 불러올 수 없던 문제
 
 ## 1.13.0 (2022/06/12)
 ### Improvements
