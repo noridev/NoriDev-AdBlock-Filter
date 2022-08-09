@@ -7,7 +7,6 @@
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
-
 !---------------------------!
 !----- Allowed Domains -----!
 !---------------------------!
