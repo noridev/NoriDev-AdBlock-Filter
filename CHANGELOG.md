@@ -10,6 +10,7 @@
 ## 1.x.x (unreleased)
 ### Features
 - 다나와 광고
+- 미니기기 코리아 광고
 ### Changes
 - 확장 필터를 GitHub로 이전
 - 확장 필터에서 일부 목록을 옮김
