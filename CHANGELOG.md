@@ -8,6 +8,8 @@
 -->
 
 ## 1.x.x (unreleased)
+### Improvements
+- todo mate 접속할 수 없는 문제 수정 
 ### Features
 - 다나와 광고
 - 미니기기 코리아 광고
