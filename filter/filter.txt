@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.14.1b7
-! TimeUpdated: 2022-08-29T14:49:28+09:00
+! Version: 1.15.0b1
+! TimeUpdated: 2022-10-20T17:09:27+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -117,6 +117,15 @@ twitch.tv##+js(nowebrtc)
 @@||ap.www.namecheap.com^$important,document
 @@||wurfl.io/wurfl.js$important,domain=todomate.net
 @@||t.co^$important
+@@||weblog.coupang.com^$important
+@@||metrics.icloud.com^$important
+@@||securemetrics.apple.com^$important
+@@||supportmetrics.apple.com^$important
+@@||iadsdk.apple.com^$important
+@@||ca.iadsdk.apple.com^$important
+@@||cf.iadsdk.apple.com^$important
+@@||tr.iadsdk.apple.com^$important
+@@||news.iadsdk.apple.com^$important
 
 
 !---------------------------!
@@ -148,9 +157,11 @@ twitch.tv##+js(nowebrtc)
 !---------------!
 ! [ Kakao ]
 ||ad-content.moment.kakao.com^
+||ad-content.*.kakao.com^
 ||kyson.ad.daum.net^
 ||display.ad.daum.net^
 ||webid.ad.daum.net^
+||ad.daum.net^
 ||talkchannel-log.kakao.com^
 ||tg.kakao.com^
 ||stat.tiara.kakao.com^
@@ -162,6 +173,11 @@ twitch.tv##+js(nowebrtc)
 ||mud-kage.kakao.co.kr^
 ||aem-collector.daumkakao.io^
 ||aem-collector-prod-ytlsojie.kgslb.com^
+||adclix.daum.net^
+||adclixad.daum.net^
+||adserver.*.kakao.com^
+||amsimg.daum-img.net^
+||amsv2.daum.net^
 
 ! [ Google ]
 ||pagead2.googlesyndication.com^
@@ -245,6 +261,9 @@ twitch.tv##+js(nowebrtc)
 ||static.danawa.com/globaljs/static/adweb_counter_danawa.min.js
 
 ! [ Samsung ]
+||img.samsungmembers.com/default/banner^
+||img.samsungapps.com/promotion^
+||img.samsungapps.com/productNew^
 ! SPay
 ||kr-cdn-gpp.mcsvc.samsung.com^
 ||kr-api.mcsvc.samsung.com^
@@ -284,6 +303,37 @@ twitch.tv##+js(nowebrtc)
 ||ad.everytime.kr^
 ||cf-eba.everytime.kr^
 
+! [ AfreecaTV ]
+||admvod.afreecatv.com^
+||deapi.afreecatv.com^
+||cache.m.afreecatv.com/application/theme^
+||stimg.afreecatv.com/LOGO^
+||vod-player001.afreecatv.com^
+||vod-player002.afreecatv.com^
+||vod-player003.afreecatv.com^
+
+! [ Gom Player ]
+@@||*.ibytedtos.com^$stylesheet
+@@||s0.ipstatp.com/transno/*
+||*.buzzvil.com^$app=com.gretech.gomplayerko
+||*.daumkakao.io^$app=com.gretech.gomplayerko
+||*.facebook.com^$app=com.gretech.gomplayerko
+||*.ibytedtos.com^$app=com.gretech.gomplayerko
+||*.pangle.io^$app=com.gretech.gomplayerko
+||*.reward.avatye.com^$app=com.gretech.gomplayerko
+||*.tnkad.net^$app=com.gretech.gomplayerko
+||api.*.avatye.com^$app=com.gretech.gomplayerko
+||reward-download.*.*.amazonaws.com^$app=com.gretech.gomplayerko
+||reward-sdk.*.*.amazonaws.com^$app=com.gretech.gomplayerko
+
+! --- Shopping --- !
+! [ Coupang ]
+||ads-partners.coupang.com^
+||static.coupangcdn.com/ga/cmg_paperboy/image/*/$image
+
+! [ WEMAKEPRICE ]
+||wemakeplace.club/ad/*
+
 ! --- etc --- !
 ||ad.adnmore.co.kr^
 ||adapi.about.co.kr^
@@ -308,6 +358,7 @@ twitch.tv##+js(nowebrtc)
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
 ||www.ad.appyoun.com^
+||ad-img.ebaykorea.com^
 
 
 !----------------------------------------!
@@ -686,6 +737,15 @@ m.comic.naver.com##div.info_bottom:nth-child(6) > div.desc_bottom:first-child
 news.naver.com##div.comp_news_ad
 n.news.naver.com###_MODAL_LAYER_FOR_UNSUBSCRIBER_PROMOTION
 
+! [ Kakao ]
+! Daum
+daum.net##.content_ad
+search.daum.net##.log_wide.adLinkColl
+! Tistory
+tistory.com##.adfit.revenue_unit_item
+tistory.com##.kakao_ad_area
+tistory.com##.revenue_unit_wrap
+
 ! [ pixiv ]
 pixiv.net###root > div[class^="sc-"]:nth-child(2) > div[class^="sc-"]:last-child
 pixiv.net###root > div[class^="sc-"]:nth-child(3) > div[class^="sc-"]:nth-child(6)
@@ -933,6 +993,7 @@ dcinside.com##.banner_box
 gall.dcinside.com###admaru
 gall.dcinside.com##._BTN_AD_
 gall.dcinside.com##.power_click
+gall.dcinside.com##.kakao_ad_area
 game.dcinside.com###comment_li_0
 
 ! [ Fmkorea ]
@@ -965,16 +1026,83 @@ quasarzone.com###container > aside.logo-area.right:last-child
 ! [ svrforum ]
 svrforum.com###xt_sticker_wrap
 
+! [ YouTube ]
+! youtube.com###ticker-content
+! youtube.com###watch7-sidebar-offer
+! youtube.com##.float-mealbar
+! youtube.com##.iv-merch-shelf
+! youtube.com##.mealbar-promo-renderer
+! youtube.com##.ytp-cards-button
+! youtube.com##.ytp-cards-teaser
+! youtube.com##.ytp-ce-covering-image
+! youtube.com##.ytp-ce-covering-overlay
+! youtube.com##.ytp-ce-element
+! youtube.com##.ytp-ce-element-shadow
+! youtube.com##.ytp-ce-element.ytp-ce-channel.ytp-ce-channel-this
+! youtube.com##.ytp-ce-element.ytp-ce-video.ytp-ce-element-show
+! youtube.com##.ytp-ce-expanding-image
+! youtube.com##.ytp-endscreen-content
+! youtube.com##.ytp-pause-overlay
+! youtube.com##.ytp-related-on-error-overlay
+! youtube.com##.ytp-scroll-min.ytp-pause-overlay
+! youtube.com##ytd-rich-section-renderer
+
+! [ AfreecaTV ]
+bj.afreecatv.com##.bs-notice_layer
+vod.afreecatv.com##.adballoon
+play.afreecatv.com##.bg_dark
+play.afreecatv.com##.adshop_layer
+
 ! --- Shopping --- !
 ! [ Coupang ]
 coupang.com###coupang-banner
+coupang.com###fullBanner
+coupang.com###prodStickyBanner
+coupang.com###sdp-bottom-banner
+coupang.com###sdp-bottom-promotion-banner-sign-up
+coupang.com###sdp-mid-banner
+coupang.com###sdp-mid-banner-btf
+coupang.com###sdp-middle-banner
+coupang.com###app-redirect-nudge
+coupang.com##.ads-line-banner-container
+coupang.com##.ads-impression
+coupang.com##.promotion-banner
+coupang.com##.srp-top-banner-container
 coupang.com###searchOptionForm > div.search-wrapper:last-child > div.search-content.search-content-with-feedback:nth-child(2) > div.srp-top-banner-container:nth-child(3)
 
 ! [ Gmarket ]
 mobile.gmarket.co.kr###srpSponsorLinkList
 
 ! [ Auction ]
+auction.co.kr###BAC_AD_ZONE20
+auction.co.kr##.module_slot.promo
 browse.auction.co.kr###section--inner_content_body_container > div.section--module_wrap:last-child > div.component.component--sponsor_link
+
+! [ AliExpress ]
+aliexpress.com###container-for-smart-banner
+aliexpress.com##.pop-picture
+aliexpress.com##.top-banner-container
+
+! [ TMON ]
+tmon.co.kr###_orderBanner
+tmon.co.kr###_wrapPromotionBanner
+tmon.co.kr###topline_ad
+tmon.co.kr##.banner
+tmon.co.kr##.banner_div
+tmon.co.kr##.footer_banner
+tmon.co.kr##.link_banner
+tmon.co.kr##.slider_banners
+tmon.co.kr##.special_banner
+tmon.co.kr##.topline_ad
+
+! [ WEMAKEPRICE ]
+wemakeprice.com##.mix_global_banner
+wemakeprice.com###_cardBanner
+wemakeprice.com###_rollingBanner
+
+! [ Qoo10 ]
+qoo10.com##.shr_rwrditm
+qoo10.com##.m_ad_bnnr
 
 ! [ emart ]
 emart.ssg.com###sky_banner_tab
