@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Extention - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 확장 필터입니다. 확장 필터의 특성상 콘텐츠가 과도하게 차단되는 경우가 있을 수 있습니다. 불필요한 항목까지 제거되는 경우, 예외 목록을 설정해서 사용하십시오. NoriDev AdBlock Filter와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.4.4b2
-! TimeUpdated: 2022-08-19T14:23:13+09:00
+! Version: 1.4.4b3
+! TimeUpdated: 2023-05-18T16:42:47+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -38,11 +38,17 @@ www.naver.com###footer
 www.naver.com###NM_scroll_top_btn
 www.naver.com###shopcast
 www.naver.com###NM_MID_BANNER
+naver.com###root > div.Layout-module__column_left___tLO23:first-child > div.Layout-module__content_area___b_3TU:nth-child(3)
+naver.com###root > div.Layout-module__column_left___tLO23:first-child > div.Layout-module__content_area___b_3TU.id_book:last-child
+naver.com###right-content-area > div.Layout-module__right_bottom___s54MX:last-child
+naver.com###right-content-area > div.Layout-module__right_top___h3g3v:first-child > div.Layout-module__content_area___b_3TU:last-child
 ! Cafe
 section.cafe.naver.com###mainContainer > div.section_content_view.content:first-child > div.home_editors:first-child
 section.cafe.naver.com###mainContainer > div.SectionAside.section_aside_view.aside:last-child > div.AsideBanner.cafe_banner:first-child
 section.cafe.naver.com###mainContainer > div.SectionAside.section_aside_view.aside:last-child > div.AsideLink.link_area:nth-child(4)
 section.cafe.naver.com###mainContainer > div.SectionAside.section_aside_view.aside:last-child > div.AsideSmartBot.smart_bot_area:nth-child(6)
+! Shopping
+search.shopping.naver.com###__next > div.style_wrap__9MMLu.pc_type > div.style_container__UxP6u:nth-child(2) > div.style_inner__i4gKy:last-child > div.style_content_wrap__Cdqnl:last-child > div.style_content__xWg5l:first-child > div.banners_banner_area__t3hFI:nth-child(5)
 
 ! [ etc ]
 kktoon/[0-9]/.com###banner_top_center
