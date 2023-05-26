@@ -7,7 +7,7 @@
 
 -->
 
-## 1.x.x (unreleased)
+## 1.15.0 (2023/05/26)
 ### Improvements
 - 외부 필터에 의해 todo mate 접속할 수 없는 문제
 - 외부 필터에 의해 Twitter 리디렉션 링크가 작동하지 않을 수 있는 문제
