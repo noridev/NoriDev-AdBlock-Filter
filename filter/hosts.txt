@@ -1,10 +1,11 @@
-# Title: NoriDev AdAway DNS Filter
-# Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
+# Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다.
+# Title: NoriDev AdAway Filter - Beta
+# Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 # Author: NoriDev
-# Version: 1.13.0
-# TimeUpdated: 2022-06-12T21:39:00+09:00
+! Version: 1.15.0
+! TimeUpdated: 2022-10-20T17:09:27+09:00
 # Expires: 1 days (update frequency)
-# Homepage: https://github.com/NoriDev/NoriDev-AdBlock-Filter
+# Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
 127.0.0.1  localhost
 ::1  localhost
@@ -15,6 +16,12 @@
 # ------------------------------ #
 # 104.76.97.12 pbs.twimg.com
 # 104.76.97.13 video.twimg.com
+
+
+# ---------------------------- #
+# ----- Twitch P2P Block ----- #
+# ---------------------------- #
+127.0.0.1 backend.dna-delivery.com
 
 
 # ------------------------------- #
@@ -29,9 +36,11 @@
 # --------------- #
 # [ Kakao ]
 127.0.0.1 ad-content.moment.kakao.com
+127.0.0.1 ad-content.*.kakao.com
 127.0.0.1 kyson.ad.daum.net
 127.0.0.1 display.ad.daum.net
 127.0.0.1 webid.ad.daum.net
+127.0.0.1 ad.daum.net
 127.0.0.1 talkchannel-log.kakao.com
 127.0.0.1 tg.kakao.com
 127.0.0.1 stat.tiara.kakao.com
@@ -43,6 +52,11 @@
 127.0.0.1 mud-kage.kakao.co.kr
 127.0.0.1 aem-collector.daumkakao.io
 127.0.0.1 aem-collector-prod-ytlsojie.kgslb.com
+127.0.0.1 adclix.daum.net
+127.0.0.1 adclixad.daum.net
+127.0.0.1 adserver.*.kakao.com
+127.0.0.1 amsimg.daum-img.net
+127.0.0.1 amsv2.daum.net
 
 # [ Google ]
 127.0.0.1 pagead2.googlesyndication.com
@@ -57,12 +71,7 @@
 127.0.0.1 googletagservices.com
 127.0.0.1 partnerssl.googleadservices.com
 127.0.0.1 googletagmanager.com
-
-# [ Twitter ]
-127.0.0.1 ads-twitter.com
-127.0.0.1 ads-api.twitter.com
-127.0.0.1 ads-api-sandbox.twitter.com
-127.0.0.1 ads-bidder-api.twitter.com
+127.0.0.1 www-googletagmanager.l.google.com
 
 # [ Naver ]
 # Common
@@ -117,19 +126,40 @@
 # [ namuwiki ]
 127.0.0.1 ng.namupage.com
 
-# [ Community ]
-# dcinside
-127.0.0.1 addc.dcinside.com
-# EveryTime
-127.0.0.1 ad.everytime.kr
-127.0.0.1 cf-eba.everytime.kr
+# [ danawa ]
+127.0.0.1 ad.danawa.com
 
 # [ Samsung ]
 # SPay
 127.0.0.1 kr-cdn-gpp.mcsvc.samsung.com
 127.0.0.1 kr-api.mcsvc.samsung.com
 
-# [ etc ]
+# --- Community --- #
+# [ Twitter ]
+127.0.0.1 ads-twitter.com
+127.0.0.1 ads-api.twitter.com
+127.0.0.1 ads-api-sandbox.twitter.com
+127.0.0.1 ads-bidder-api.twitter.com
+
+# [ dcinside ]
+127.0.0.1 addc.dcinside.com
+
+# [ EveryTime ]
+127.0.0.1 ad.everytime.kr
+127.0.0.1 cf-eba.everytime.kr
+
+# [ AfreecaTV ]
+127.0.0.1 admvod.afreecatv.com
+127.0.0.1 deapi.afreecatv.com
+127.0.0.1 vod-player001.afreecatv.com
+127.0.0.1 vod-player002.afreecatv.com
+127.0.0.1 vod-player003.afreecatv.com
+
+# --- Shopping --- #
+# [ Coupang ]
+127.0.0.1 ads-partners.coupang.com
+
+# --- etc --- #
 127.0.0.1 ad.adnmore.co.kr
 127.0.0.1 adapi.about.co.kr
 127.0.0.1 advimg.ad-mapps.com
@@ -144,7 +174,6 @@
 127.0.0.1 click.clickmon.co.kr
 127.0.0.1 *.clickmon.co.kr
 127.0.0.1 g-plug.pstatic.net
-127.0.0.1 ad.danawa.com
 127.0.0.1 adpopcorn.com
 127.0.0.1 ad.cauly.co.kr
 127.0.0.1 ablibr.com
@@ -153,3 +182,5 @@
 127.0.0.1 gwx.adlibr.com
 127.0.0.1 ad-exchange.toast.com
 127.0.0.1 adlc-exchange.toast.com
+127.0.0.1 www.ad.appyoun.com
+127.0.0.1 ad-img.ebaykorea.com

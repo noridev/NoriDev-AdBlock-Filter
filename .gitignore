@@ -4,3 +4,6 @@
 
 # Intelij-IDEA
 /.idea
+
+# macOS
+/.DS_Store
