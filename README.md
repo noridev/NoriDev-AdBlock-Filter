@@ -1,8 +1,4 @@
-# NoriDev AdBlock Filter - Beta
-**[ 경고 ]** Beta 테스트가 진행중인 필터입니다.
-
-Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 담고 있으며, Stable 버전 대비 불안정하거나 불필요한 영역까지 차단하는 경우가 발생할 수 있으므로 사용에 주의해 주십시오.  
-또한, 이러한 문제가 발생하는 경우 issue 및 Pull Requests를 생성하여 주십시오.
+# NoriDev AdBlock Filter
 
 모든 디바이스에서 사용할 수 있는 광고 차단 필터입니다.  
 브라우저 필터와 겸용으로 사용가능합니다. (브라우저(Safari 호환) + DNS 필터)
@@ -50,9 +46,9 @@ Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 �
 ## 사용 방법
 ### 브라우저 필터 추가
 #### 필터 URL
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/filter.txt</pre>
 
-### AdGuard ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta))
+### AdGuard ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 <details markdown="1">
 <summary>직접 추가하기</summary>
 
@@ -90,22 +86,22 @@ Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 �
 
 </details>
 
-### Adblock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta))
+### Adblock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 Adblock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
-### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta))
+### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
 ### AdAway
 아래 URL을 호스트로 추가합니다.
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/filter.txt</pre>
 <hr>
 
 ### 확장 필터 추가
 #### 필터 URL
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/extension/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/extension/filter/filter.txt</pre>
 
-### AdGuard ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta%20-%20Extension))
+### AdGuard ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Extension))
 <details markdown="1">
 <summary>직접 추가하기</summary>
 
@@ -143,20 +139,20 @@ uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구�
 
 </details>
 
-### Adblock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta%20-%20Extension))
+### Adblock Plus ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Extension))
 Adblock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
-### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta%20-%20Extension))
+### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Extension))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
 
 ### AdAway
 아래 URL을 호스트로 추가합니다.
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/extension/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/extension/filter/filter.txt</pre>
 <hr>
 
 ### DNS 필터 추가
 #### 필터 URL
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/filter.txt</pre>
 
 ### AdGuard
 AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주세요.
@@ -186,7 +182,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 3. 스위치를 **켭니다**.
 4. **DNS 요청 차단 방식**을 클릭합니다.
 5. **새 DNS 필터**를 클릭합니다.
-6. **URL 또는 경로**에 상단의 URL을 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdBlock Filter - Beta**를 입력하고 **추가**를 누릅니다.
+6. **URL 또는 경로**에 상단의 URL을 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdBlock Filter**를 입력하고 **추가**를 누릅니다.
 
 #### iOS / iPadOS
 ##### 개발자 모드 활성화
