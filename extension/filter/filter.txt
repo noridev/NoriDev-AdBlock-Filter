@@ -2,8 +2,8 @@
 ! Title: NoriDev AdBlock Filter - Extention - Beta
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 확장 필터입니다. 확장 필터의 특성상 콘텐츠가 과도하게 차단되는 경우가 있을 수 있습니다. 불필요한 항목까지 제거되는 경우, 예외 목록을 설정해서 사용하십시오. NoriDev AdBlock Filter와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.4.4
-! TimeUpdated: 2023-05-26T13:42:51+09:00
+! Version: 1.4.5-E-b1
+! TimeUpdated: 2023-07-25T16:49:37+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -57,9 +57,6 @@ search.shopping.naver.com###__next > div.style_wrap__9MMLu.pc_type > div.style_c
 ! [ etc ]
 kktoon/[0-9]/.com###banner_top_center
 kktoon/[0-9]/.com###banner_top_center
-ro-/[0-9]/.com###main-banner-view > div.col-15.col-md-9.col-sm-9 > div.row.row-15:first-child
-tokyomotion.net###active_overlay_1477648
-tokyomotion.net###i_frame
 manatoki/[0-9]/.net###main-banner-view
 manatoki/[0-9]/.net###thjluipeqmdgsknrof
 manatoki/[0-9]/.net###id_mbv
@@ -67,6 +64,11 @@ manatoki/[0-9]/.net###dgulmvfxpocetbrnwkhiqjs
 manatoki/[0-9]/.net###skhrutgjpfnioqlm
 newtoki/[0-9]/.com###main-banner-view
 newtoki/[0-9]/.com###\37 3a3309060mbb10baaaac8
+newtoki/[0-9]/.com###id_mbv > div.col-15.col-md-9.col-sm-9:first-child
+newtoki/[0-9]/.com###smuijnvqoetarfgbclwkhpd
+agit/[0-9]/.com##div.container.banner.mt-2.advx:nth-child(8)
+agit/[0-9]/.com##section:nth-child(24) > article > div.view-padding > div.container.mt-4.toon-viewer > div.toon-viewer-warp > div:first-child
+agit/[0-9]/.com##section:nth-child(24) > article > div.view-padding > div.container.mt-4.toon-viewer > div.toon-viewer-warp > div:nth-child(3)
 tkor./[a-z]/##div.section.mobile-banner.top_hr:nth-child(11) > div.container:first-child > div.row:first-child > div.col-md-12.mobile-banner
 tkor./[a-z]/###banner_21_img
 tkor./[a-z]/###thema_wrapper > div.wrapper.boxed > div > div.at-content > div.view-wrap:nth-child(5) > div.contents.panel.panel-default.view-head.no-attach.content-zoom:last-child > div.bn.bnt:nth-child(12)
@@ -76,6 +78,11 @@ tkor./[a-z]/###thema_wrapper > div.wrapper.boxed > div > div.at-content > div.vi
 tkor./[a-z]/###thema_wrapper > div.wrapper.boxed > div > div.at-content > div.view-wrap:nth-child(4) > div.contents.panel.panel-default.view-head.no-attach.content-zoom:last-child > div.bn.bnt:nth-child(10)
 tkor./[a-z]/##div.section.mobile-banner.top_hr:nth-child(11) > div.container:first-child > div.row:first-child > div.col-md-12.mobile-banner:nth-child(2)
 tkor./[a-z]/###thema_wrapper > div.wrapper.boxed > div > div.at-content > div.view-wrap:nth-child(5) > div.contents.panel.panel-default.view-head.no-attach.content-zoom:last-child > a:nth-child(4)
+ro-/[0-9]/.com###main-banner-view > div.col-15.col-md-9.col-sm-9 > div.row.row-15:first-child
 movie.eroterest.net###content > div.adArea
 movie.eroterest.net###content > div.row:nth-child(3) > div.col-lg-10.order-2.mainContent:first-child > div.adArea:nth-child(2)
 movie.eroterest.net###content > div.row:nth-child(3) > div.col-lg-10.order-2.mainContent:first-child > div.imageListContent:nth-child(4) > iframe:nth-child(3)
+xn--hhr917d3fecva.xyz###div_container
+xn--hhr917d3fecva.xyz###main > div.freespace_sp:first-child
+tokyomotion.net###active_overlay_1477648
+tokyomotion.net###i_frame
