@@ -149,10 +149,6 @@ Adblock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구�
 
 ### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fbeta%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Beta%20-%20Extension))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
-
-### AdAway
-아래 URL을 호스트로 추가합니다.
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/extension/filter/filter.txt</pre>
 <hr>
 
 ### DNS 필터 추가
@@ -187,7 +183,7 @@ AdGuard의 설정에 진입한 뒤, 아래 과정을 차례대로 따라해주�
 3. 스위치를 **켭니다**.
 4. **DNS 요청 차단 방식**을 클릭합니다.
 5. **새 DNS 필터**를 클릭합니다.
-6. **URL 또는 경로**에 상단의 URL을 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdBlock Filter - Beta**를 입력하고 **추가**를 누릅니다.
+6. **URL 또는 경로**에 상단의 URL을 붙여넣고 **가져오기**을 클릭한 뒤, 이름에 **NoriDev AdBlock Filter (Beta)**를 입력하고 **추가**를 누릅니다.
 
 #### iOS / iPadOS
 ##### 개발자 모드 활성화
