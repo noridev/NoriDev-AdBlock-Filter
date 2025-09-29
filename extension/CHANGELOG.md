@@ -17,7 +17,7 @@
 
 -->
 
-## 1.5.0 <small>(unreleased)</small>
+## 1.5.0 <small>(2025.9.29)</small>
 
 ### Features
 - 카카오톡 숏폼 차단
