@@ -1,9 +1,9 @@
 ! Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다.
-! Title: NoriDev AdBlock Filter - Beta
+! Title: NoriDev AdBlock Filter (Beta)
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
 ! Version: 1.16.0-b5
-! TimeUpdated: 2023-07-25T16:51:30+09:00
+! TimeUpdated: 2025-09-29T17:01:21+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -243,6 +243,15 @@ twitch.tv##+js(nowebrtc)
 ||searchad-phinf.pstatic.net^
 ! Cafe
 ||golda.cafe.naver.com^
+||campaign.nbilly.naver.com^
+||ni.naver.com^
+||camp-api.naver.com^
+||camp-report.naver.com^
+||bff.cafe.naver.com^
+||nlog.naver.com^
+||route-like.naver.com^
+||scv-cafe.io.naver.com^
+||ipada.cafe.naver.com^
 ! Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
@@ -266,7 +275,7 @@ twitch.tv##+js(nowebrtc)
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
-! [ namuwiki ]
+! [ Namuwiki ]
 ||api.namu.wiki/etnews^
 ||namu.news/api/articles/cached^
 ||nanumnews.com/data/nanumnews_com/banner/201111264931247.jpg^
