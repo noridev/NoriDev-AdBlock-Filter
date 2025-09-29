@@ -1,4 +1,4 @@
-# NoriDev AdBlock Filter - Beta
+# NoriDev AdBlock Filter (Beta)
 **[ 경고 ]** Beta 테스트가 진행중인 필터입니다.
 
 Beta 필터는 Stable 필터에 적용 예정인 필터링 구문과 내용을 담고 있으며, Stable 버전 대비 불안정하거나 불필요한 영역까지 차단하는 경우가 발생할 수 있으므로 사용에 주의해 주십시오.  
@@ -99,7 +99,7 @@ uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구�
 
 ### AdAway
 아래 URL을 호스트로 추가합니다.
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/beta/filter/hosts.txt</pre>
 <hr>
 
 ### 확장 필터 추가
