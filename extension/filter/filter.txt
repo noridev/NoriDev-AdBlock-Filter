@@ -1,9 +1,9 @@
 ﻿! Beta 테스트 진행중인 필터입니다. 사용에 주의가 필요합니다.
-! Title: NoriDev AdBlock Filter - Extention - Beta
+! Title: NoriDev AdBlock Filter - Extention (Beta)
 ! Description: Beta 테스트 진행중인 필터이므로 사용에 주의가 필요합니다. 확장 필터입니다. 확장 필터의 특성상 콘텐츠가 과도하게 차단되는 경우가 있을 수 있습니다. 불필요한 항목까지 제거되는 경우, 예외 목록을 설정해서 사용하십시오. NoriDev AdBlock Filter와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
 ! Version: 1.4.5-E-b1
-! TimeUpdated: 2023-07-25T16:49:37+09:00
+! TimeUpdated: 2025-09-29T17:01:21+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
 
@@ -15,6 +15,23 @@
 @@||kokonect.link^$important,document
 @@||hub.docker.com^$important,document
 @@||photos.google.com^$important,document
+
+
+!---------------!
+!----- ads -----!
+!---------------!
+! [ Kakao ]
+! Shortform
+||shortformstats.kakao.com^
+||shopper.kakao.com^
+||vscf.play.kakao.com^
+||play.kakao.com^
+||ik.kakaocdn.net^
+||kuid-provider.ds.kakao.com^
+||ticket-loco.kakao.com^
+||kuid-provider-public-kka25qaf.kgns3.com^
+||kamp.kakao.com^
+||kamp-edge-public-r84ovbtf.kgns3.com^
 
 
 !----------------------------------------!
