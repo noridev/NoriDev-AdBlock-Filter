@@ -1,8 +1,8 @@
 ! Title: NoriDev AdBlock Filter
 ! Description: 카카오톡 광고, 네이버 카페 광고, 에브리타임 광고, 구글 광고 등을 제거하며, 트위터의 이미지와 영상 로드 속도를 개선합니다. List-KR, YousList, Adblock Warning Removal List 필터의 스크립트를 일부 사용하고 있습니다. 보다 나은 필터링을 위해, List-KR 및 Adblock Warning Removal List 필터와 같이 사용하는 것을 권장합니다.
 ! Author: NoriDev
-! Version: 1.15.0
-! TimeUpdated: 2022-10-20T17:09:27+09:00
+! Version: 1.16.0
+! TimeUpdated: 2025-09-29T17:01:21+09:00
 ! Expires: 1 days (update frequency)
 ! Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter
 
@@ -177,6 +177,28 @@ twitch.tv##+js(nowebrtc)
 ||adserver.*.kakao.com^
 ||amsimg.daum-img.net^
 ||amsv2.daum.net^
+||developers-gcocsfex.kgslb.com^
+||developers.kakao.com^
+||kyson.kakao.com^
+||kyson-uvlzgydu.kgslb.com^
+||shopper-api-e3oes9by.kgslb.com^
+||shopper-api.kakao.com^
+||talktips.kakao.com^
+||more-api.kakao.com^
+||iopen.gl.kakaocdn.net^
+||chat-openlink-79wjmlwr.kgns1.com^
+||chat-openlink.kakao.com^
+||openlink.kakao.com^
+||aem-ingest-3hlnczlq.kgslb.com^
+||bc-ds-0f1uqsuh.kgslb.com^
+||aem-ingest.onkakao.net^
+||bc.ds.kakao.com^
+||taxi.gl.kakaocdn.net^
+||taxi.kakaocdn.net^
+||d3f-poi-7j3t97vo.kgslb.com^
+||d3f-poi.kakao.com^
+||acid-api.ds.kakao.com^
+||launches.appsflyer.com^
 
 ! [ Google ]
 ||pagead2.googlesyndication.com^
@@ -220,6 +242,15 @@ twitch.tv##+js(nowebrtc)
 ||searchad-phinf.pstatic.net^
 ! Cafe
 ||golda.cafe.naver.com^
+||campaign.nbilly.naver.com^
+||ni.naver.com^
+||camp-api.naver.com^
+||camp-report.naver.com^
+||bff.cafe.naver.com^
+||nlog.naver.com^
+||route-like.naver.com^
+||scv-cafe.io.naver.com^
+||ipada.cafe.naver.com^
 ! Band
 ||naverpa-phinf.pstatic.net^
 ||ad-api.band.us^
@@ -243,7 +274,7 @@ twitch.tv##+js(nowebrtc)
 ||pixon.ads-pixiv.net^
 ||imp.pixiv.net^
 
-! [ namuwiki ]
+! [ Namuwiki ]
 ||api.namu.wiki/etnews^
 ||namu.news/api/articles/cached^
 ||nanumnews.com/data/nanumnews_com/banner/201111264931247.jpg^
@@ -711,6 +742,8 @@ m.naver.com###MM_search_container > div.grid1_wrap.brick-house:first-child > div
 m.naver.com###MM_search_container > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_comp_napp_banner
 m.naver.com###MM_HOME_PROMOTION
 m.naver.com###MM_HOME_PROMOTION > div.cp_content_wrap.cp_hide_tablet
+m.naver.com###MM_search_container > div.comp_pad_wrap.id_comp_promotion:last-child
+m.naver.com###MM_search_container > div.grid1_wrap.brick-house:first-child > div.brick-vowel:first-child > div.grid1.id_comp_napp_banner:nth-child(6)
 search.naver.com###main_pack > div.ad_section.section._pl_section.bg_type_v2:nth-child(6)
 search.naver.com###sub_pack > a:nth-child(3)
 m.search.naver.com###ct > section.sc.sp_brand:nth-child(4)
@@ -721,6 +754,7 @@ m.kin.naver.com###endContentsArea > div.sec_col1:first-child > div.banner_wrap.b
 m.cafe.naver.com###ct > div.list_board:first-child > ul.noti_area
 m.cafe.naver.com###ct > div.home_section_promotion
 m.cafe.naver.com###app > div > div.WebArticle.os_ios > div.CafeAppBanner
+m.cafe.naver.com###app > div.CommentView.CommentViewWrap.MediaViewerWrapper > div.CommonComment.ArticleComment.CommentView:last-child > div.CafeAppBanner:nth-child(5)
 ! Blog
 m.blog.naver.com###POST_VIEW_BOTTOM_WEB
 m.blog.naver.com###ssp-adda

@@ -23,6 +23,7 @@
 ## 기능
 ### 필터링
 - 카카오톡 채팅 광고, 카카오 나우 및 채널 탭 차단
+- 카카오 관련 서비스 광고 (카카오 T 등)
 - 에브리타임 (웹/앱) 광고
 - 구글 광고
 - 웹 트위터의 프로모션 광고, 나를 위한 트렌드 및 팔로우 추천
@@ -94,7 +95,7 @@ uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구�
 
 ### AdAway
 아래 URL을 호스트로 추가합니다.
-<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/filter.txt</pre>
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/filter/hosts.txt</pre>
 <hr>
 
 ### 확장 필터 추가
