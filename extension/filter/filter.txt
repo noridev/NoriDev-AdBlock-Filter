@@ -27,11 +27,6 @@
 ||vscf.play.kakao.com^
 ||play.kakao.com^
 ||ik.kakaocdn.net^
-||kuid-provider.ds.kakao.com^
-||ticket-loco.kakao.com^
-||kuid-provider-public-kka25qaf.kgns3.com^
-||kamp.kakao.com^
-||kamp-edge-public-r84ovbtf.kgns3.com^
 
 
 !----------------------------------------!

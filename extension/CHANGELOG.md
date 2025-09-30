@@ -1,5 +1,5 @@
 <!--
-## 1.x.x (unreleased)
+## 1.x.x <small>(unreleased)</small>
 
 ### Improvements
 - 
@@ -16,6 +16,13 @@
 ---
 
 -->
+
+## 1.x.x <small>(unreleased)</small>
+
+### Bugfixes
+- 카카오톡에서 채팅을 보내거나 받을 수 없음
+
+---
 
 ## 1.5.0 <small>(2025.9.29)</small>
 
