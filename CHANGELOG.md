@@ -1,5 +1,5 @@
 <!--
-## 1.x.x (unreleased)
+## 1.x.x <small>(unreleased)</small>
 
 ### Improvements
 - 

@@ -16,6 +16,7 @@
 - **AdGuard Home**
 - **Adblock Plus**
 - **uBlock Origin**
+- **AdAway**
 
 이외의 환경에서는 테스트가 진행되지 않았으므로, 사용할 수는 있으나 작동을 보장할 수 없습니다.
 
@@ -66,4 +67,8 @@ Adblock Plus 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구�
 
 ### uBlock Origin ([필터 구독](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fnoridev%2FNoriDev-AdBlock-Filter%2Fraw%2Fmaster%2Fextension%2Ffilter%2Ffilter.txt&amp;title=NoriDev%20AdBlock%20Filter%20-%20Extension))
 uBlock Origin 브라우저 플러그인을 설치한 뒤, 상단의 [필터 구독] 버튼을 눌러 필터를 추가합니다.
+
+### AdAway
+아래 URL을 호스트로 추가합니다.
+<pre>https://github.com/noridev/NoriDev-AdBlock-Filter/raw/master/extension/filter/hosts.txt</pre>
 <hr>
