@@ -17,7 +17,7 @@
 
 -->
 
-## 1.x.x <small>(unreleased)</small>
+## 1.5.1 <small>(2025.10.1)</small>
 
 ### Improvements
 - `hosts` 형식 확장 필터 추가
