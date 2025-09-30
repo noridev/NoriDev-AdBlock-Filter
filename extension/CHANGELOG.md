@@ -19,6 +19,9 @@
 
 ## 1.x.x <small>(unreleased)</small>
 
+### Improvements
+- `hosts` 형식 확장 필터 추가
+
 ### Bugfixes
 - 카카오톡에서 채팅을 보내거나 받을 수 없음
 
