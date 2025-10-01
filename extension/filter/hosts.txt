@@ -4,7 +4,7 @@
 # Version: 1.5.2
 # TimeUpdated: 2025-10-02T07:49:55+09:00
 # Expires: 1 days (update frequency)
-# Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter/tree/beta
+# Homepage: https://github.com/noridev/NoriDev-AdBlock-Filter
 
 127.0.0.1  localhost
 ::1  localhost
