@@ -17,6 +17,13 @@
 
 -->
 
+## 1.x.x <small>(unreleased)</small>
+
+### Changes
+- 일부 필터의 분류 변경
+
+---
+
 ## 1.5.1 <small>(2025.10.1)</small>
 
 ### Improvements
