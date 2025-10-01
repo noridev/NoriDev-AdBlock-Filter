@@ -17,7 +17,7 @@
 
 -->
 
-## 1.x.x <small>(unreleased)</small>
+## 1.5.2 <small>(2025.10.2)</small>
 
 ### Changes
 - 일부 필터의 분류 변경
