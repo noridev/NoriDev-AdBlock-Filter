@@ -17,6 +17,17 @@
 
 -->
 
+## 1.16.1 <small>(2025.10.2)</small>
+
+### Features
+- 네이버 카페 광고
+
+### Changes
+- 일부 필터의 분류 변경
+- `developers.kakao.com` 차단 해제
+
+---
+
 ## 1.16.0 <small>(2025.9.29)</small>
 
 ### Features
