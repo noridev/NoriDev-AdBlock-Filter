@@ -182,8 +182,6 @@ twitch.tv##+js(nowebrtc)
 ||developers.kakao.com^
 ||kyson.kakao.com^
 ||kyson-uvlzgydu.kgslb.com^
-||shopper-api-e3oes9by.kgslb.com^
-||shopper-api.kakao.com^
 ||talktips.kakao.com^
 ||more-api.kakao.com^
 ||iopen.gl.kakaocdn.net^
@@ -194,12 +192,17 @@ twitch.tv##+js(nowebrtc)
 ||bc-ds-0f1uqsuh.kgslb.com^
 ||aem-ingest.onkakao.net^
 ||bc.ds.kakao.com^
-||taxi.gl.kakaocdn.net^
-||taxi.kakaocdn.net^
 ||d3f-poi-7j3t97vo.kgslb.com^
 ||d3f-poi.kakao.com^
 ||acid-api.ds.kakao.com^
 ||launches.appsflyer.com^
+||ik.kakaocdn.net^
+! Shopping
+||shopper-api.kakao.com^
+||shopper-api-e3oes9by.kgslb.com^
+! Kakao T
+||taxi.kakaocdn.net^
+||taxi.gl.kakaocdn.net^
 
 ! [ Google ]
 ||pagead2.googlesyndication.com^

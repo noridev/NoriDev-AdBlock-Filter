@@ -61,8 +61,6 @@
 127.0.0.1 developers.kakao.com
 127.0.0.1 kyson.kakao.com
 127.0.0.1 kyson-uvlzgydu.kgslb.com
-127.0.0.1 shopper-api-e3oes9by.kgslb.com
-127.0.0.1 shopper-api.kakao.com
 127.0.0.1 talktips.kakao.com
 127.0.0.1 more-api.kakao.com
 127.0.0.1 iopen.gl.kakaocdn.net
@@ -73,12 +71,17 @@
 127.0.0.1 bc-ds-0f1uqsuh.kgslb.com
 127.0.0.1 aem-ingest.onkakao.net
 127.0.0.1 bc.ds.kakao.com
-127.0.0.1 taxi.gl.kakaocdn.net
-127.0.0.1 taxi.kakaocdn.net
 127.0.0.1 d3f-poi-7j3t97vo.kgslb.com
 127.0.0.1 d3f-poi.kakao.com
 127.0.0.1 acid-api.ds.kakao.com
 127.0.0.1 launches.appsflyer.com
+127.0.0.1 ik.kakaocdn.net
+# Shopping
+127.0.0.1 shopper-api.kakao.com
+127.0.0.1 shopper-api-e3oes9by.kgslb.com
+# Kakao T
+127.0.0.1 taxi.kakaocdn.net
+127.0.0.1 taxi.gl.kakaocdn.net
 
 # [ Google ]
 127.0.0.1 pagead2.googlesyndication.com

@@ -21,12 +21,12 @@
 !----- ads -----!
 !---------------!
 ! [ Kakao ]
+! Shopping
+||shopper.kakao.com^
 ! Shortform
 ||shortformstats.kakao.com^
-||shopper.kakao.com^
 ||vscf.play.kakao.com^
 ||play.kakao.com^
-||ik.kakaocdn.net^
 
 
 !----------------------------------------!

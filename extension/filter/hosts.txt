@@ -14,9 +14,9 @@
 # ----- ads ----- #
 # --------------- #
 # [ Kakao ]
+# Shopping
+127.0.0.1 shopper.kakao.com
 # Shortform
 127.0.0.1 shortformstats.kakao.com
-127.0.0.1 shopper.kakao.com
 127.0.0.1 vscf.play.kakao.com
 127.0.0.1 play.kakao.com
-127.0.0.1 ik.kakaocdn.net
