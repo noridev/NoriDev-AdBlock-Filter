@@ -17,7 +17,7 @@
 
 -->
 
-## 1.x.x <small>(unreleased)</small>
+## 1.16.1 <small>(2025.10.2)</small>
 
 ### Features
 - 네이버 카페 광고
