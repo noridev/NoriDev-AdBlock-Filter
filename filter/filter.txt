@@ -178,8 +178,6 @@ twitch.tv##+js(nowebrtc)
 ||adserver.*.kakao.com^
 ||amsimg.daum-img.net^
 ||amsv2.daum.net^
-||developers-gcocsfex.kgslb.com^
-||developers.kakao.com^
 ||kyson.kakao.com^
 ||kyson-uvlzgydu.kgslb.com^
 ||talktips.kakao.com^

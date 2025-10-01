@@ -57,8 +57,6 @@
 127.0.0.1 adserver.*.kakao.com
 127.0.0.1 amsimg.daum-img.net
 127.0.0.1 amsv2.daum.net
-127.0.0.1 developers-gcocsfex.kgslb.com
-127.0.0.1 developers.kakao.com
 127.0.0.1 kyson.kakao.com
 127.0.0.1 kyson-uvlzgydu.kgslb.com
 127.0.0.1 talktips.kakao.com
