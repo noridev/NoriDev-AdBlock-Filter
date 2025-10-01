@@ -753,7 +753,10 @@ m.search.naver.com##.ad_light_mode
 msearch.shopping.naver.com###__next > div.style_wrap__37f4c > div.banners_banner_area__1OxCJ:nth-child(8) > div.banners_flick_area__W7IBy:nth-child(2)
 m.kin.naver.com###endContentsArea > div.sec_col1:first-child > div.banner_wrap.banner_type1:nth-child(4)
 ! Cafe
+section.cafe.naver.com###mainContainer > div.section_home_content.content:nth-child(2) > div.section_home_banner:nth-child(2)
+section.cafe.naver.com###mainContainer > div.aside:last-child > div.inner_wrap > div.aside_banner:nth-child(4)
 m.cafe.naver.com###ct > div.list_board:first-child > ul.noti_area
+m.cafe.naver.com###ct > div.list_board > ul.NoticeArea:first-child > li.list_item:first-child
 m.cafe.naver.com###ct > div.home_section_promotion
 m.cafe.naver.com###app > div > div.WebArticle.os_ios > div.CafeAppBanner
 m.cafe.naver.com###app > div.CommentView.CommentViewWrap.MediaViewerWrapper > div.CommonComment.ArticleComment.CommentView:last-child > div.CafeAppBanner:nth-child(5)
