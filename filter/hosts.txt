@@ -149,6 +149,9 @@
 127.0.0.1 naverwebtoon-phinf.pstatic.net
 127.0.0.1 naverwebtoon-phinf.pstatic.net.static.gscdn.net
 
+# [ Toss ]
+127.0.0.1 trillion.toss.im
+
 # [ pixiv ]
 127.0.0.1 ad2.fivecdm.com
 127.0.0.1 bc2.fivecdm.com

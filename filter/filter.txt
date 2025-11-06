@@ -270,6 +270,9 @@ twitch.tv##+js(nowebrtc)
 ||naverwebtoon-phinf.pstatic.net^
 ||naverwebtoon-phinf.pstatic.net.static.gscdn.net^
 
+! [ Toss ]
+||trillion.toss.im^
+
 ! [ pixiv ]
 ||ad2.fivecdm.com^
 ||bc2.fivecdm.com^
