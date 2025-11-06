@@ -17,7 +17,7 @@
 
 -->
 
-## 1.x.x <small>(unreleased)</small>
+## 1.16.2 <small>(2025.11.6)</small>
 
 ### Features
 - 토스 인앱 배너 광고 차단
