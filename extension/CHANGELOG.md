@@ -17,6 +17,13 @@
 
 -->
 
+## 1.x.x <small>(unreleased)</small>
+
+### Features
+- 카카오톡 숏폼 차단
+
+---
+
 ## 1.5.2 <small>(2025.10.2)</small>
 
 ### Changes

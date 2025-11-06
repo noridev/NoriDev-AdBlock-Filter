@@ -20,3 +20,10 @@
 127.0.0.1 shortformstats.kakao.com
 127.0.0.1 vscf.play.kakao.com
 127.0.0.1 play.kakao.com
+127.0.0.1 thumb.kakaocdn.net
+127.0.0.1 thumb-fqkp1znz.kgns1.com
+127.0.0.1 videostats.kakao.com
+127.0.0.1 kamp.kakao.com
+127.0.0.1 kamp-edge-public-r84ovbtf.kgns3.com
+127.0.0.1 sdk-tv.kakao.com
+127.0.0.1 videocloud-prod-public-o6p1tuov.kgns1.com

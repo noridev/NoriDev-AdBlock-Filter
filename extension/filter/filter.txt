@@ -27,6 +27,13 @@
 ||shortformstats.kakao.com^
 ||vscf.play.kakao.com^
 ||play.kakao.com^
+||thumb.kakaocdn.net^
+||thumb-fqkp1znz.kgns1.com^
+||videostats.kakao.com^
+||kamp.kakao.com^
+||kamp-edge-public-r84ovbtf.kgns3.com^
+||sdk-tv.kakao.com^
+||videocloud-prod-public-o6p1tuov.kgns1.com^
 
 
 !----------------------------------------!
